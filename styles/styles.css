@@ -273,4 +273,42 @@ nav .logoContainer {
   height: 6px;
   background-color: black;
   margin: 3px;
+}
+
+.branding {
+  background-color: #C3DAB7;
+  height: 100vh;
+}
+
+.brandingImg {
+  position: relative;
+}
+.brandingImg .circleText {
+  position: absolute;
+  bottom: 175px;
+  left: 45px;
+  height: auto;
+}
+.brandingImg .circleText img {
+  width: 120px;
+  height: auto;
+}
+
+.brandingImgContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 100px 0 50px 0;
+}
+
+.brandingTextContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.brandingTextContainer h2 {
+  font-family: "Montserrat", sans-serif;
+}
+.brandingTextContainer p {
+  font-family: "Open Sans", sans-serif;
 }/*# sourceMappingURL=styles.css.map */
