@@ -1,0 +1,21 @@
+header {
+    background-image: url(../assets/home-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    font-family: $headingFont;
+    h1 {
+        margin: 0;
+    }
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .logoContainer{
+        order: -1;
+        padding: 5px;
+    }
+}

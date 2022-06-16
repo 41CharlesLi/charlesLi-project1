@@ -1,0 +1,18 @@
+.leftNav,
+.rightNav {
+    display: none;
+}
+
+.burgerMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 5px
+}
+
+.burgerMenu div{
+    width: 50px; 
+    height: 6px;
+    background-color: black;
+    margin: 3px;
+}
