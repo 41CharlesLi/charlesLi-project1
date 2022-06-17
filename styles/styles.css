@@ -348,4 +348,43 @@ nav .logoContainer {
   text-align: center;
   opacity: 0.5;
   margin-top: 25px;
+}
+
+.productDetails {
+  background-image: url(/assets/home-4.jpeg);
+  background-position: 55% 5%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.productDetails .productDetailsContainer {
+  padding: 25px 0 25px 0;
+}
+.productDetails .indProductContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
+}
+.productDetails .indProductContainer h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.productDetails .indProductContainer p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  opacity: 0.5;
+  text-align: center;
+}
+.productDetails .indProductContainer .iconContainer {
+  border: 2px solid black;
+  border-radius: 50%;
+  padding: 10px;
+  height: 45px;
+  width: 45px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=styles.css.map */
