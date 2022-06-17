@@ -2,7 +2,7 @@
 
 .branding{
     background-color: $primary;
-    height: 100vh
+    padding-bottom: 50px;
 }
 
 .brandingImg{
@@ -15,7 +15,7 @@
     .circleText{
         position:absolute;
         top:-15%;
-        left: 45px;
+        left: 0px;
         img {
             width: 120px;
             height: auto;
@@ -41,3 +41,36 @@
         font-family: $bodyFont;
     }
 }
+
+//end of branding section
+
+//start of circle gallery
+.circleGallery{
+    height: 75vh;
+    font-family: $bodyFont;
+    margin-top: 75px;
+    margin-left: 0;
+    .circleGalleryContainer{
+        display: flex;
+        width: 90vw;
+        justify-content: space-around;
+        button{
+            font-size: 2rem;
+        }
+        img {
+            border-radius: 50%;
+            width: 200px;
+        }
+    }
+
+    p {
+        font-family: $bodyFont;
+        line-height: 24px;
+        text-align: center;
+        opacity: .5;
+        margin-top: 25px;
+    }
+}
+
+
+

@@ -234,6 +234,13 @@ img {
   padding: 0;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 header {
   background-image: url(../assets/home-1.jpeg);
   background-repeat: no-repeat;
@@ -277,7 +284,7 @@ nav .logoContainer {
 
 .branding {
   background-color: #C3DAB7;
-  height: 100vh;
+  padding-bottom: 50px;
 }
 
 .brandingImg {
@@ -291,7 +298,7 @@ nav .logoContainer {
 .brandingImg .circleText {
   position: absolute;
   top: -15%;
-  left: 45px;
+  left: 0px;
 }
 .brandingImg .circleText img {
   width: 120px;
@@ -315,4 +322,30 @@ nav .logoContainer {
 }
 .brandingTextContainer p {
   font-family: "Open Sans", sans-serif;
+}
+
+.circleGallery {
+  height: 75vh;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 75px;
+  margin-left: 0;
+}
+.circleGallery .circleGalleryContainer {
+  display: flex;
+  width: 90vw;
+  justify-content: space-around;
+}
+.circleGallery .circleGalleryContainer button {
+  font-size: 2rem;
+}
+.circleGallery .circleGalleryContainer img {
+  border-radius: 50%;
+  width: 200px;
+}
+.circleGallery p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 24px;
+  text-align: center;
+  opacity: 0.5;
+  margin-top: 25px;
 }/*# sourceMappingURL=styles.css.map */
