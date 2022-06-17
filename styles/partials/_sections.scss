@@ -118,5 +118,86 @@
 
 //end of product details section
 
-//start of 
+//start of team gallery
 
+.teamIntro h2 {
+    font-family: $headingFont;
+    font-weight: lighter;
+    opacity: .8;
+    text-align: center;
+    margin: 50px;
+}
+.teamGalleryTextContainer{
+    background-color: $offWhite;
+    font-family: $headingFont;
+    text-align: center;
+    padding: 5px;
+    h2{
+        opacity: .7;
+        margin-bottom: 25px;
+    }
+    p{
+        margin-bottom: 50px;
+        opacity: .5;
+    }
+}
+
+.teamGalleryImgContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img, 
+    a {
+        margin:15px;
+    }
+    a {
+        height: 270px;
+        width: 270px;
+        align-self: center;
+        font-family: $headingFont;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+//end of team gallery  
+
+//start of contact us section 
+
+.contactUs{
+    background-image: url(/assets/home-10.jpeg);
+    background-position: bottom;
+    padding: 100px 15px 75px 15px;
+    align-items: center;
+}
+.contactUs .wrapper {
+    background-color: $primary;
+    text-align: center;
+    padding: 25px 25px 75px 25px;
+    width:100%;
+
+    h2 {
+        font-family: $headingFont;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+    p {
+        font-family: $bodyFont;
+        margin-bottom: 50px;
+        font-size: .8rem;
+        line-height: 1.2rem;
+        opacity: .6;
+    }
+    .viewPortfolio{
+        font-family: $headingFont;
+        text-decoration: none;
+        background-color: $offWhite;
+        padding:15px 30px 15px 30px;
+        color: $black;
+        font-weight: 700;
+    }
+}
+
+//end of contact us

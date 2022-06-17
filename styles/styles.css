@@ -387,4 +387,81 @@ nav .logoContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.teamIntro h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  opacity: 0.8;
+  text-align: center;
+  margin: 50px;
+}
+
+.teamGalleryTextContainer {
+  background-color: #F6F6F6;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 5px;
+}
+.teamGalleryTextContainer h2 {
+  opacity: 0.7;
+  margin-bottom: 25px;
+}
+.teamGalleryTextContainer p {
+  margin-bottom: 50px;
+  opacity: 0.5;
+}
+
+.teamGalleryImgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.teamGalleryImgContainer img,
+.teamGalleryImgContainer a {
+  margin: 15px;
+}
+.teamGalleryImgContainer a {
+  height: 270px;
+  width: 270px;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactUs {
+  background-image: url(/assets/home-10.jpeg);
+  background-position: bottom;
+  padding: 100px 15px 75px 15px;
+  align-items: center;
+}
+
+.contactUs .wrapper {
+  background-color: #C3DAB7;
+  text-align: center;
+  padding: 25px 25px 75px 25px;
+  width: 100%;
+}
+.contactUs .wrapper h2 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+.contactUs .wrapper p {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 50px;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  opacity: 0.6;
+}
+.contactUs .wrapper .viewPortfolio {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  background-color: #F6F6F6;
+  padding: 15px 30px 15px 30px;
+  color: #333333;
+  font-weight: 700;
 }/*# sourceMappingURL=styles.css.map */
