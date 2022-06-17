@@ -131,8 +131,8 @@
     background-color: $offWhite;
     font-family: $headingFont;
     text-align: center;
-    padding: 5px;
-    h2{
+    padding: 35px 15px 5px 15px;
+    h3{
         opacity: .7;
         margin-bottom: 25px;
     }
@@ -201,3 +201,80 @@
 }
 
 //end of contact us
+
+//start of footer
+
+footer {
+    background-color: $black;
+    color:$offWhite;
+    h3{
+        font-family: $headingFont;
+        font-weight: 300;
+        opacity: .7;
+        margin: 0;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    p, 
+    a {
+        font-family: $bodyFont;
+        opacity: .7;
+        font-size: 0.8rem;
+    }
+    a{
+        text-decoration: none;
+        color:$offWhite;
+    }
+    ul li:before{ 
+        content:"• "; font-size:10pt; 
+    }
+}
+
+.footerContact {
+    h3 {
+    margin-top: 0;
+    padding-top: 30px;
+}
+    p{
+        margin-bottom: 3px;
+        padding: 0;
+    }
+}
+
+.recentPosts {
+    margin-bottom: 2px;
+}
+
+.twitterWidget{
+    p {
+    margin-bottom: 5px;
+    border: none;
+}
+    form {
+        display: flex;
+        flex-direction: row;
+    }
+    input {
+        padding: 4px;
+    }
+    button {
+        background-color: $primary;
+        padding: 5px;
+    }
+}
+
+.footerLogo{
+    background-color: $black;
+    margin-top: 25px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba($offWhite, 0.2);
+    
+    h3{
+        color:$white;
+        margin: 0 auto;
+    }
+}

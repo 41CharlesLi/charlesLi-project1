@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -401,9 +402,9 @@ nav .logoContainer {
   background-color: #F6F6F6;
   font-family: "Montserrat", sans-serif;
   text-align: center;
-  padding: 5px;
+  padding: 35px 15px 5px 15px;
 }
-.teamGalleryTextContainer h2 {
+.teamGalleryTextContainer h3 {
   opacity: 0.7;
   margin-bottom: 25px;
 }
@@ -464,4 +465,74 @@ nav .logoContainer {
   padding: 15px 30px 15px 30px;
   color: #333333;
   font-weight: 700;
+}
+
+footer {
+  background-color: #333333;
+  color: #F6F6F6;
+}
+footer h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  opacity: 0.7;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+footer p,
+footer a {
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+footer a {
+  text-decoration: none;
+  color: #F6F6F6;
+}
+footer ul li:before {
+  content: "• ";
+  font-size: 10pt;
+}
+
+.footerContact h3 {
+  margin-top: 0;
+  padding-top: 30px;
+}
+.footerContact p {
+  margin-bottom: 3px;
+  padding: 0;
+}
+
+.recentPosts {
+  margin-bottom: 2px;
+}
+
+.twitterWidget p {
+  margin-bottom: 5px;
+  border: none;
+}
+.twitterWidget form {
+  display: flex;
+  flex-direction: row;
+}
+.twitterWidget input {
+  padding: 4px;
+}
+.twitterWidget button {
+  background-color: #C3DAB7;
+  padding: 5px;
+}
+
+.footerLogo {
+  background-color: #333333;
+  margin-top: 25px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(246, 246, 246, 0.2);
+}
+.footerLogo h3 {
+  color: #FFFFFF;
+  margin: 0 auto;
 }/*# sourceMappingURL=styles.css.map */
