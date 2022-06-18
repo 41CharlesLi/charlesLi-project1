@@ -46,14 +46,13 @@
 
 //start of circle gallery
 .circleGallery{
-    height: 75vh;
     font-family: $bodyFont;
-    margin-top: 75px;
-    margin-left: 0;
+    margin: 75px 0 50px 0;
     .circleGalleryContainer{
         display: flex;
         width: 90vw;
         justify-content: space-around;
+        max-width: 1250px;
         button{
             font-size: 2rem;
         }
@@ -145,7 +144,7 @@
 .teamGalleryImgContainer{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;   
     img, 
     a {
         margin:15px;
@@ -212,7 +211,6 @@ footer {
         font-weight: 300;
         opacity: .7;
         margin: 0;
-        margin-bottom: 20px;
         margin-top: 30px;
     }
 
@@ -234,6 +232,7 @@ footer {
 .footerContact {
     h3 {
     margin-top: 0;
+    margin-bottom: 20px;
     padding-top: 30px;
 }
     p{
@@ -243,12 +242,21 @@ footer {
 }
 
 .recentPosts {
-    margin-bottom: 2px;
+    h3{
+        margin-bottom: 20px;
+    }
+    li{
+        margin-bottom: 3px;
+    }
 }
 
 .twitterWidget{
+    h3 {
+        margin-bottom: -5px;
+
+    }
     p {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     border: none;
 }
     form {
