@@ -141,10 +141,14 @@
     }
 }
 
-.teamGalleryImgContainer{
+
+.teamGallery {
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;
+
+}
+.teamGallery{
     img, 
     a {
         margin:15px;
