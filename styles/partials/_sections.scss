@@ -174,12 +174,15 @@
     background-position: bottom;
     padding: 100px 15px 75px 15px;
     align-items: center;
+    img{
+        display: none;
+    }
 }
 .contactUs .wrapper {
     background-color: $primary;
     text-align: center;
     padding: 25px 25px 75px 25px;
-    width:100%;
+    width:85%;
 
     h2 {
         font-family: $headingFont;

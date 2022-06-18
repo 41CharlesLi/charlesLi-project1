@@ -15,7 +15,8 @@
     footer .wrapper{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
+        gap: 15px;
     }
 }
 
@@ -150,4 +151,40 @@
             }
         }
 
+
+
+        .contactUs {
+        background-image: none;
+        padding: 0;
+        img {
+            display: inline-block;
+            width: auto;
+            max-height: 600px;
+        }
+        .contactTextContainer {
+            width: 55vw;
+            h2{
+                padding: 0;
+            }
+            p{
+                padding: 0 25px 0 25px;
+            }
+        }
+        .contactImgContainer {
+            display: flex;
+            align-items: center;
+            align-self: flex-end;
+        }
+        .wrapper{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-image: none;
+            max-width: 1400px;           
+            margin: 0 auto; 
+            padding: 0;
+            height: 600px;
+        }
+
+    }
     }

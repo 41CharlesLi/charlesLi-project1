@@ -439,12 +439,15 @@ nav .logoContainer {
   padding: 100px 15px 75px 15px;
   align-items: center;
 }
+.contactUs img {
+  display: none;
+}
 
 .contactUs .wrapper {
   background-color: #C3DAB7;
   text-align: center;
   padding: 25px 25px 75px 25px;
-  width: 100%;
+  width: 85%;
 }
 .contactUs .wrapper h2 {
   font-family: "Montserrat", sans-serif;
@@ -560,7 +563,8 @@ footer ul li:before {
   footer .wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 15px;
   }
 }
 @media (min-width: 1200px) {
@@ -687,5 +691,39 @@ footer ul li:before {
   }
   .teamGallery a {
     margin: 0;
+  }
+
+  .contactUs {
+    background-image: none;
+    padding: 0;
+  }
+  .contactUs img {
+    display: inline-block;
+    width: auto;
+    max-height: 600px;
+  }
+  .contactUs .contactTextContainer {
+    width: 55vw;
+  }
+  .contactUs .contactTextContainer h2 {
+    padding: 0;
+  }
+  .contactUs .contactTextContainer p {
+    padding: 0 25px 0 25px;
+  }
+  .contactUs .contactImgContainer {
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+  }
+  .contactUs .wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-image: none;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    height: 600px;
   }
 }/*# sourceMappingURL=styles.css.map */
