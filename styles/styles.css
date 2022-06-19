@@ -305,7 +305,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 25px;
+  padding-top: 10px;
 }
 nav .logoContainer {
   order: -1;
@@ -708,6 +708,9 @@ footer a {
   top: -25px;
 }
 
+.commentForm h3 {
+  font-size: 1.75rem;
+}
 .commentForm form {
   display: flex;
   flex-direction: column;
@@ -734,7 +737,7 @@ footer a {
   border-bottom: 1px solid black;
   font-weight: bold;
 }
-.commentForm form button {
+.commentForm button {
   padding: 10px;
   margin: 10px;
   width: 300px;
@@ -742,7 +745,7 @@ footer a {
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
 }
-.commentForm form button:hover {
+.commentForm button:hover {
   text-decoration: underline;
   text-underline-offset: 15px;
 }
@@ -766,6 +769,18 @@ footer a {
     flex-direction: row;
     justify-content: space-around;
     gap: 15px;
+  }
+
+  .blogHeader {
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+
+  .relatedImgGallery {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1200px) {
@@ -956,5 +971,69 @@ footer a {
   .footerLogo {
     font-size: 0.6rem;
     letter-spacing: 0.3rem;
+  }
+
+  .blogHeader {
+    background-size: cover;
+    height: 75vh;
+    max-width: 1400px;
+    margin-bottom: 100px;
+  }
+
+  .blogPost h2 {
+    font-size: 3rem;
+    margin-bottom: 25px;
+  }
+  .blogPost .authorDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .blogPost .authorDetails .textContainer {
+    padding-top: 10px;
+  }
+  .blogPost .blogMain {
+    padding-top: 50px;
+  }
+  .blogPost .blogSocialLinks {
+    padding-top: 50px;
+  }
+
+  .relatedPosts h3 {
+    font-size: 2rem;
+  }
+  .relatedPosts .relatedImgGallery {
+    padding-top: 25px;
+  }
+
+  .userComments h3 {
+    font-size: 2rem;
+  }
+  .userComments .indComments {
+    display: flex;
+    flex-direction: row;
+  }
+  .userComments .indComments img {
+    width: 90px;
+    height: 120px;
+    margin-right: 50px;
+  }
+  .userComments .indComments .textContainer {
+    width: 1000px;
+    max-width: 1200px;
+    padding: 5px 0 30px 20px;
+  }
+  .userComments .indComments .textContainer::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 20px solid transparent;
+    border-right: 20px solid #F6F6F6;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    left: -38px;
+    top: 5px;
   }
 }/*# sourceMappingURL=styles.css.map */

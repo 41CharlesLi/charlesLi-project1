@@ -431,7 +431,11 @@ footer {
 
 //comment form 
 
-.commentForm form {
+.commentForm {
+    h3 {
+        font-size: 1.75rem;
+    }
+    form {
     display: flex;
     flex-direction: column;
     gap:15px;
@@ -454,6 +458,7 @@ footer {
             border-bottom: 1px solid black;
             font-weight: bold;
         }
+    }
     }
     
 
