@@ -281,7 +281,7 @@ footer {
 //start main blog section
 
 .blogPost {
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     h2 {
     font-weight: 700;
     padding-top: 25px;    
@@ -320,12 +320,8 @@ footer {
     h4, 
     p {
         margin: 0;
-        font-weight: 700;
     }
 
-    h4{
-        font-weight: normal;
-    }
 
     .authorDetailsLeft{
         display: flex;
@@ -388,4 +384,90 @@ footer {
     p{
         padding: 3px;
     }
+}
+
+//related posts end
+
+//user comments start
+
+.userComments {
+    padding-bottom: 50px;
+    h3 {
+        font-size: 1.75rem;
+    }
+    img {
+        padding-bottom: 30px;
+    }
+    p{
+        font-size: .8rem;
+    }
+    a {
+        font-style: italic;
+        text-decoration: none;
+    }
+    .textContainer {
+        position:relative;
+        background-color: $offWhite;
+        padding: 10px;
+        margin-bottom: 25px;
+        &::before{
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid transparent;
+            border-bottom: 20px solid $offWhite;
+            left: 0px;
+            top: -25px;
+
+            //https://codingislove.com/css-speech-bubbles/
+        }
+    }
+}
+
+//user comments end
+
+//comment form 
+
+.commentForm form {
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    margin-bottom: 50px;
+    
+    input,
+    textarea {
+        border: none;
+        font-family: $bodyFont;
+        padding: 10px;
+        border-bottom: 1px solid rgba(gray, 0.3);
+        &:hover{
+            border: none;        
+            border-bottom: 1px solid black;
+            color: black;
+        }
+        &:focus{
+            outline:none;
+            border: none;        
+            border-bottom: 1px solid black;
+            font-weight: bold;
+        }
+    }
+    
+
+    button {
+        padding: 10px;
+        margin: 10px;
+        width: 300px;
+        align-self: center;
+        font-family: $headingFont;
+        font-size: 1.2rem;
+        &:hover{
+            text-decoration: underline;
+            text-underline-offset: 15px;
+        }
+    }
+
 }

@@ -581,7 +581,7 @@ footer a {
 }
 
 .blogPost {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .blogPost h2 {
   font-weight: 700;
@@ -620,10 +620,6 @@ footer a {
 .blogPost .authorDetails h4,
 .blogPost .authorDetails p {
   margin: 0;
-  font-weight: 700;
-}
-.blogPost .authorDetails h4 {
-  font-weight: normal;
 }
 .blogPost .authorDetails .authorDetailsLeft {
   display: flex;
@@ -675,6 +671,80 @@ footer a {
 }
 .relatedImgGallery p {
   padding: 3px;
+}
+
+.userComments {
+  padding-bottom: 50px;
+}
+.userComments h3 {
+  font-size: 1.75rem;
+}
+.userComments img {
+  padding-bottom: 30px;
+}
+.userComments p {
+  font-size: 0.8rem;
+}
+.userComments a {
+  font-style: italic;
+  text-decoration: none;
+}
+.userComments .textContainer {
+  position: relative;
+  background-color: #F6F6F6;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+.userComments .textContainer::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid transparent;
+  border-bottom: 20px solid #F6F6F6;
+  left: 0px;
+  top: -25px;
+}
+
+.commentForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+.commentForm form input,
+.commentForm form textarea {
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+}
+.commentForm form input:hover,
+.commentForm form textarea:hover {
+  border: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+.commentForm form input:focus,
+.commentForm form textarea:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+.commentForm form button {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  align-self: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+.commentForm form button:hover {
+  text-decoration: underline;
+  text-underline-offset: 15px;
 }
 
 @media (min-width: 750px) {
@@ -747,7 +817,8 @@ footer a {
     padding: 3px;
     background-color: #C3DAB7;
     border-radius: 50%;
-    padding: 5px 8px 6px 8px;
+    padding: 8px 6px;
+    line-height: 0;
   }
 
   .brandingImg .circleText img {
