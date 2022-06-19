@@ -274,6 +274,118 @@ footer {
         color: $white;
         margin: 0 auto;
     }
+}
 //end footer
 
+//start BLOG PAGE
+//start main blog section
+
+.blogPost {
+    padding-bottom: 100px;
+    h2 {
+    font-weight: 700;
+    padding-top: 25px;    
+}
+    .breadcrumb{
+        padding-top: 10px;
+        padding-bottom: 25px;
+        li {
+            display: inline;
+            opacity: 1.2;
+    }
+    li+li:before {
+        padding: 4px;
+        content: "/\00a0";
+    }
+    li a {
+        text-decoration: none;
+        &:hover {
+            color: #01447e;
+            text-decoration: underline;
+        }
+    }
+    li:last-child {
+        font-weight: 700;
+        color: black;
+    }
+}
+
+.authorDetails {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
+
+    h4, 
+    p {
+        margin: 0;
+        font-weight: 700;
+    }
+
+    h4{
+        font-weight: normal;
+    }
+
+    .authorDetailsLeft{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        img {
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            margin-right: 25px;
+            
+        }
+    }
+
+    .authorDetailsRight {
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+}
+    .boldText {
+        font-weight: 700;
+    }
+
+    .blogSocialLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        p {
+            margin: 0
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            li {
+                padding: 0 15px 3px 15px;
+            }
+        }
+    }
+
+}
+
+//end blog section
+
+//related posts section start
+
+.relatedImgGallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .imgContainer {
+        padding-bottom: 25px;
+        width: 300px;
+        img {
+            width: 100%;
+            height: auto;
+        }       
+    }
+    p{
+        padding: 3px;
+    }
 }

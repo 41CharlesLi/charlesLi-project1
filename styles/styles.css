@@ -275,6 +275,11 @@ button {
   font-size: 2rem;
 }
 
+.borderBottom {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  padding-bottom: 25px;
+}
+
 header {
   background-image: url(../assets/home-1.jpeg);
   background-repeat: no-repeat;
@@ -573,6 +578,103 @@ footer a {
 .footerLogo h3 {
   color: #FFFFFF;
   margin: 0 auto;
+}
+
+.blogPost {
+  padding-bottom: 100px;
+}
+.blogPost h2 {
+  font-weight: 700;
+  padding-top: 25px;
+}
+.blogPost .breadcrumb {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+.blogPost .breadcrumb li {
+  display: inline;
+  opacity: 1.2;
+}
+.blogPost .breadcrumb li + li:before {
+  padding: 4px;
+  content: "/ ";
+}
+.blogPost .breadcrumb li a {
+  text-decoration: none;
+}
+.blogPost .breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.blogPost .breadcrumb li:last-child {
+  font-weight: 700;
+  color: black;
+}
+.blogPost .authorDetails {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-start;
+}
+.blogPost .authorDetails h4,
+.blogPost .authorDetails p {
+  margin: 0;
+  font-weight: 700;
+}
+.blogPost .authorDetails h4 {
+  font-weight: normal;
+}
+.blogPost .authorDetails .authorDetailsLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.blogPost .authorDetails .authorDetailsLeft img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-right: 25px;
+}
+.blogPost .authorDetails .authorDetailsRight {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.blogPost .boldText {
+  font-weight: 700;
+}
+.blogPost .blogSocialLinks {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.blogPost .blogSocialLinks p {
+  margin: 0;
+}
+.blogPost .blogSocialLinks ul {
+  display: flex;
+  flex-direction: row;
+}
+.blogPost .blogSocialLinks ul li {
+  padding: 0 15px 3px 15px;
+}
+
+.relatedImgGallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.relatedImgGallery .imgContainer {
+  padding-bottom: 25px;
+  width: 300px;
+}
+.relatedImgGallery .imgContainer img {
+  width: 100%;
+  height: auto;
+}
+.relatedImgGallery p {
+  padding: 3px;
 }
 
 @media (min-width: 750px) {
