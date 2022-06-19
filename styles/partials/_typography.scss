@@ -1,0 +1,32 @@
+h1, h2, h3, h4 {
+    font-family: $headingFont;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+    margin: 0;
+    font-weight: 500;
+}
+
+p,
+a {
+    font-family: $bodyFont;
+    line-height: 1.5rem;
+}
+
+.grayText {
+    font-size: .8rem;
+    line-height: 1.2rem;
+    letter-spacing: .015rem;
+    opacity: .5;
+}
+
+button{
+    font-size: 2rem;
+}

@@ -1,3 +1,5 @@
+//breakpoints 750/1200
+
 @media(min-width: 750px){
     .productDetails{
         background-position: 65% 5%;
@@ -22,6 +24,8 @@
 
 
 @media(min-width:1200px) {
+//navbar start
+
     .burgerMenu{
         display: none;
     } 
@@ -51,12 +55,32 @@
     }
 
     .rightNav{
+        .fa-solid {
+            font-size: 1.3rem;
+        }
         li{
             display: inline-block;
         }
+    
+        .fa-bag-shopping{
+            position: relative;
+            text-align: center;
+        }
+        p {
+            font-size: .5rem;
+            position: absolute;
+            top: 6px;
+            left: 7px;
+            padding: 3px;
+            background-color: $primary;
+            border-radius: 50%;
+            padding: 5px 8px 6px 8px;
+        }
     }
 
-    
+//nav end
+
+//branding section
     .brandingImg .circleText img{
             position: absolute;
             top: -20px;
@@ -72,6 +96,10 @@
         margin: 0 auto;
     }
 
+//branding end
+
+
+//product details section
 
     .productDetails {
         height: 75vh;
@@ -97,17 +125,6 @@
         max-width: 900px;
         margin-top: auto;
         padding: -25px;
-        h2{
-            font-size: 18px;
-            line-height: 24px;
-            letter-spacing: 1.8px;
-            margin: 0;
-        }
-        p {
-            font-size: 14px;
-            line-height: 24px;
-            letter-spacing: .3px;
-        }
         .indProductContainer {
             display: flex;
             flex-direction: row;
@@ -122,6 +139,10 @@
         }
     }
 
+//product detail end
+
+
+//team gallery start 
 
     .teamGallery{
         margin: 0 auto;
@@ -150,8 +171,9 @@
                 margin: 0;
             }
         }
+//team gallery end
 
-
+//contact us section
 
         .contactUs {
         background-image: none;
@@ -162,7 +184,7 @@
             max-height: 600px;
         }
         .contactTextContainer {
-            width: 55vw;
+            width: 100vw;
             h2{
                 padding: 0;
             }
@@ -180,11 +202,41 @@
             flex-direction: row;
             align-items: center;
             background-image: none;
-            max-width: 1400px;           
-            margin: 0 auto; 
+            width: 100vw;
+            max-width: 1440px;           
             padding: 0;
             height: 600px;
         }
 
+    }
+//contact section end
+
+//footer start
+    .recentPosts{
+        h3 {
+            text-align: center;
+        }
+        li {
+            padding: 3px;
+        }
+    }
+    .twitterWidget {
+        h3 {
+            text-align: right;
+            padding-bottom: 15px
+        }
+
+        p {
+            padding-bottom: 10px;
+        }
+
+        form {
+            justify-content: right;
+        }
+    }
+
+    .footerLogo {
+        font-size: .6rem;
+        letter-spacing: .3rem;
     }
     }

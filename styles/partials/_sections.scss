@@ -34,46 +34,36 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    h2{
-        font-family: $headingFont;
-    }
-    p {
-        font-family: $bodyFont;
-    }
 }
 
 //end of branding section
 
 //start of circle gallery
 .circleGallery{
-    font-family: $bodyFont;
     margin: 75px 0 50px 0;
     .circleGalleryContainer{
         display: flex;
         width: 90vw;
         justify-content: space-around;
         max-width: 1250px;
-        button{
-            font-size: 2rem;
-        }
         img {
             border-radius: 50%;
             width: 200px;
         }
     }
-    p {
-        font-family: $bodyFont;
-        line-height: 24px;
-        text-align: center;
-        opacity: .5;
-        margin-top: 25px;
+        p {
+            text-align: center;
+            opacity: .6;
+            margin-top: 25px;
+    }
+    .textContainer {
+        max-width: 800px;
+        margin: 0 auto;
     }
 }
-
 //end of circle gallery
 
 //start of product details section
-
 .productDetails{
     background-image: url(/assets/home-4.jpeg);
     background-position: 55% 5%;
@@ -89,14 +79,9 @@
         margin: 25px;
 
         h2 {
-            font-family: $headingFont;
-            font-weight: 600;
-            font-size: 1.4rem;
             text-align: center;
         }
         p {
-            font-family: $bodyFont;
-            font-weight: 500;
             opacity: .5;
             text-align: center;
 
@@ -105,6 +90,7 @@
             border: 2px solid black;
             border-radius: 50%;
             padding: 10px;
+            margin-bottom: 10px;
             height: 45px;
             width: 45px;
             padding: 15px;
@@ -114,40 +100,34 @@
         }
     }
 }
-
 //end of product details section
 
 //start of team gallery
-
 .teamIntro h2 {
-    font-family: $headingFont;
     font-weight: lighter;
-    opacity: .8;
     text-align: center;
     margin: 50px;
 }
-.teamGalleryTextContainer{
-    background-color: $offWhite;
-    font-family: $headingFont;
-    text-align: center;
-    padding: 35px 15px 5px 15px;
-    h3{
-        opacity: .7;
-        margin-bottom: 25px;
-    }
-    p{
-        margin-bottom: 50px;
-        opacity: .5;
-    }
-}
-
 
 .teamGallery {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
+.teamGalleryTextContainer{
+    background-color: $offWhite;
+    text-align: center;
+    padding: 35px 15px 5px 15px;
+    h3{
+        opacity: .6;
+        margin-bottom: 25px;
+    }
+    p{
+        margin-bottom: 50px;
+    }
+}
+
 .teamGallery{
     img, 
     a {
@@ -164,7 +144,6 @@
         align-items: center;
     }
 }
-
 //end of team gallery  
 
 //start of contact us section 
@@ -178,25 +157,20 @@
         display: none;
     }
 }
+
 .contactUs .wrapper {
     background-color: $primary;
     text-align: center;
     padding: 25px 25px 75px 25px;
     width:85%;
-
-    h2 {
-        font-family: $headingFont;
+        h2 {
         margin-bottom: 30px;
-        font-weight: 500;
+        margin-top: 30px;
     }
-    p {
-        font-family: $bodyFont;
+        p {
         margin-bottom: 50px;
-        font-size: .8rem;
-        line-height: 1.2rem;
-        opacity: .6;
     }
-    .viewPortfolio{
+        .viewPortfolio{
         font-family: $headingFont;
         text-decoration: none;
         background-color: $offWhite;
@@ -205,16 +179,13 @@
         font-weight: 700;
     }
 }
-
 //end of contact us
 
 //start of footer
-
 footer {
     background-color: $black;
     color:$offWhite;
     h3{
-        font-family: $headingFont;
         font-weight: 300;
         opacity: .7;
         margin: 0;
@@ -223,28 +194,39 @@ footer {
 
     p, 
     a {
-        font-family: $bodyFont;
         opacity: .7;
         font-size: 0.8rem;
     }
+
     a{
         text-decoration: none;
         color:$offWhite;
     }
-    ul li:before{ 
-        content:"• "; font-size:10pt; 
-    }
+}
+
+.recentPosts li:before{ 
+    content:"• "; font-size:10pt; 
 }
 
 .footerContact {
     h3 {
-    margin-top: 0;
-    margin-bottom: 20px;
-    padding-top: 30px;
+        margin-top: 0;
+        margin-bottom: 20px;
+        padding-top: 30px;
 }
     p{
         margin-bottom: 3px;
         padding: 0;
+    }
+    .socialLinks{
+        display: flex;
+        ul {
+            li {
+                display: inline-block;
+                list-style: none;
+                margin: 15px 15px 0 0;
+            }
+        }
     }
 }
 
@@ -263,8 +245,8 @@ footer {
 
     }
     p {
-    margin-bottom: 15px;
-    border: none;
+        margin-bottom: 15px;
+        border: none;
 }
     form {
         display: flex;
@@ -289,7 +271,9 @@ footer {
     border-top: 1px solid rgba($offWhite, 0.2);
     
     h3{
-        color:$white;
+        color: $white;
         margin: 0 auto;
     }
+//end footer
+
 }

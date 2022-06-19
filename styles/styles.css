@@ -242,22 +242,65 @@ button {
   cursor: pointer;
 }
 
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+  margin: 0;
+  font-weight: 500;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5rem;
+}
+
+.grayText {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.015rem;
+  opacity: 0.5;
+}
+
+button {
+  font-size: 2rem;
+}
+
 header {
   background-image: url(../assets/home-1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 50vh;
-  font-family: "Montserrat", sans-serif;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 header h1 {
   margin: 0;
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-1.jpeg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position: 50% 65%;
+  height: 500px;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 25px;
 }
 nav .logoContainer {
   order: -1;
@@ -318,15 +361,8 @@ nav .logoContainer {
   flex-direction: column;
   text-align: center;
 }
-.brandingTextContainer h2 {
-  font-family: "Montserrat", sans-serif;
-}
-.brandingTextContainer p {
-  font-family: "Open Sans", sans-serif;
-}
 
 .circleGallery {
-  font-family: "Open Sans", sans-serif;
   margin: 75px 0 50px 0;
 }
 .circleGallery .circleGalleryContainer {
@@ -335,19 +371,18 @@ nav .logoContainer {
   justify-content: space-around;
   max-width: 1250px;
 }
-.circleGallery .circleGalleryContainer button {
-  font-size: 2rem;
-}
 .circleGallery .circleGalleryContainer img {
   border-radius: 50%;
   width: 200px;
 }
 .circleGallery p {
-  font-family: "Open Sans", sans-serif;
-  line-height: 24px;
   text-align: center;
-  opacity: 0.5;
+  opacity: 0.6;
   margin-top: 25px;
+}
+.circleGallery .textContainer {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .productDetails {
@@ -366,14 +401,9 @@ nav .logoContainer {
   margin: 25px;
 }
 .productDetails .indProductContainer h2 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1.4rem;
   text-align: center;
 }
 .productDetails .indProductContainer p {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
   opacity: 0.5;
   text-align: center;
 }
@@ -381,6 +411,7 @@ nav .logoContainer {
   border: 2px solid black;
   border-radius: 50%;
   padding: 10px;
+  margin-bottom: 10px;
   height: 45px;
   width: 45px;
   padding: 15px;
@@ -390,32 +421,28 @@ nav .logoContainer {
 }
 
 .teamIntro h2 {
-  font-family: "Montserrat", sans-serif;
   font-weight: lighter;
-  opacity: 0.8;
   text-align: center;
   margin: 50px;
-}
-
-.teamGalleryTextContainer {
-  background-color: #F6F6F6;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  padding: 35px 15px 5px 15px;
-}
-.teamGalleryTextContainer h3 {
-  opacity: 0.7;
-  margin-bottom: 25px;
-}
-.teamGalleryTextContainer p {
-  margin-bottom: 50px;
-  opacity: 0.5;
 }
 
 .teamGallery {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.teamGalleryTextContainer {
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 35px 15px 5px 15px;
+}
+.teamGalleryTextContainer h3 {
+  opacity: 0.6;
+  margin-bottom: 25px;
+}
+.teamGalleryTextContainer p {
+  margin-bottom: 50px;
 }
 
 .teamGallery img,
@@ -450,16 +477,11 @@ nav .logoContainer {
   width: 85%;
 }
 .contactUs .wrapper h2 {
-  font-family: "Montserrat", sans-serif;
   margin-bottom: 30px;
-  font-weight: 500;
+  margin-top: 30px;
 }
 .contactUs .wrapper p {
-  font-family: "Open Sans", sans-serif;
   margin-bottom: 50px;
-  font-size: 0.8rem;
-  line-height: 1.2rem;
-  opacity: 0.6;
 }
 .contactUs .wrapper .viewPortfolio {
   font-family: "Montserrat", sans-serif;
@@ -475,7 +497,6 @@ footer {
   color: #F6F6F6;
 }
 footer h3 {
-  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   opacity: 0.7;
   margin: 0;
@@ -483,7 +504,6 @@ footer h3 {
 }
 footer p,
 footer a {
-  font-family: "Open Sans", sans-serif;
   opacity: 0.7;
   font-size: 0.8rem;
 }
@@ -491,7 +511,8 @@ footer a {
   text-decoration: none;
   color: #F6F6F6;
 }
-footer ul li:before {
+
+.recentPosts li:before {
   content: "• ";
   font-size: 10pt;
 }
@@ -504,6 +525,14 @@ footer ul li:before {
 .footerContact p {
   margin-bottom: 3px;
   padding: 0;
+}
+.footerContact .socialLinks {
+  display: flex;
+}
+.footerContact .socialLinks ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 15px 15px 0 0;
 }
 
 .recentPosts h3 {
@@ -598,8 +627,25 @@ footer ul li:before {
     list-style: none;
   }
 
+  .rightNav .fa-solid {
+    font-size: 1.3rem;
+  }
   .rightNav li {
     display: inline-block;
+  }
+  .rightNav .fa-bag-shopping {
+    position: relative;
+    text-align: center;
+  }
+  .rightNav p {
+    font-size: 0.5rem;
+    position: absolute;
+    top: 6px;
+    left: 7px;
+    padding: 3px;
+    background-color: #C3DAB7;
+    border-radius: 50%;
+    padding: 5px 8px 6px 8px;
   }
 
   .brandingImg .circleText img {
@@ -642,17 +688,6 @@ footer ul li:before {
     max-width: 900px;
     margin-top: auto;
     padding: -25px;
-  }
-  .productDetailsContainer h2 {
-    font-size: 18px;
-    line-height: 24px;
-    letter-spacing: 1.8px;
-    margin: 0;
-  }
-  .productDetailsContainer p {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.3px;
   }
   .productDetailsContainer .indProductContainer {
     display: flex;
@@ -703,7 +738,7 @@ footer ul li:before {
     max-height: 600px;
   }
   .contactUs .contactTextContainer {
-    width: 55vw;
+    width: 100vw;
   }
   .contactUs .contactTextContainer h2 {
     padding: 0;
@@ -721,9 +756,32 @@ footer ul li:before {
     flex-direction: row;
     align-items: center;
     background-image: none;
-    max-width: 1400px;
-    margin: 0 auto;
+    width: 100vw;
+    max-width: 1440px;
     padding: 0;
     height: 600px;
+  }
+
+  .recentPosts h3 {
+    text-align: center;
+  }
+  .recentPosts li {
+    padding: 3px;
+  }
+
+  .twitterWidget h3 {
+    text-align: right;
+    padding-bottom: 15px;
+  }
+  .twitterWidget p {
+    padding-bottom: 10px;
+  }
+  .twitterWidget form {
+    justify-content: right;
+  }
+
+  .footerLogo {
+    font-size: 0.6rem;
+    letter-spacing: 0.3rem;
   }
 }/*# sourceMappingURL=styles.css.map */
