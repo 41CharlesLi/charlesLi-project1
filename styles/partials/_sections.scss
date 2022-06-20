@@ -1,3 +1,5 @@
+
+//START OF HOME PAGE
 //start of branding section 
 
 .branding{
@@ -276,8 +278,9 @@ footer {
     }
 }
 //end footer
+//END MAIN PAGE
 
-//start BLOG PAGE
+//START BLOG PAGE
 //start main blog section
 
 .blogPost {
@@ -474,5 +477,20 @@ footer {
             text-underline-offset: 15px;
         }
     }
+    //end comment form
+    //END BLOG PAGE
+}
 
+//CONTACT PAGE START
+header.contactHeader {
+    background-image: none;
+    height: 100px;
+.contactPageWrapper {
+    width: 1600px;
+    height: 300px;
+    background-image: url(/assets/contact-1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50% 45%;
+}
 }
