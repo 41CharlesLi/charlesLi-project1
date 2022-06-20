@@ -320,9 +320,9 @@
                 display: flex;
                 flex-direction: row;
                 img {
-                  width: 90px;
-                  height: 120px;
-                  margin-right: 50px;
+                    width: 90px;
+                    height: 120px;
+                    margin-right: 50px;
                 }
                 .textContainer{
                     width: 1000px;
@@ -347,4 +347,30 @@
             }
         
     }
+
+    //end of user comments section
+
+    //start of comment form section
+
+    .commentForm {
+        form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .commentArea {
+                width: 100%;
+            }
+            .firstRow {
+                width: calc(97%/3)
+            }
+            button {
+                margin: 0;
+                width: max-content;
+                padding:0;
+                padding-top: 30px;
+            }
+        }
+    }
+
+    //end of comment form section
 }

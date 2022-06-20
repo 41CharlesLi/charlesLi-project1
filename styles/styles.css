@@ -1036,4 +1036,24 @@ footer a {
     left: -38px;
     top: 5px;
   }
+
+  .commentForm form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .commentForm form .commentArea {
+    width: 100%;
+  }
+  .commentForm form .firstRow {
+    width: 32.3333333333%;
+  }
+  .commentForm form button {
+    margin: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding: 0;
+    padding-top: 30px;
+  }
 }/*# sourceMappingURL=styles.css.map */
