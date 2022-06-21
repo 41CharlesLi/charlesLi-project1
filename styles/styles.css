@@ -259,10 +259,43 @@ h2 {
   font-weight: 500;
 }
 
-p,
-a {
+h3 {
+  font-size: 1rem;
+  line-height: 24px;
+  letter-spacing: 1.8px;
+}
+
+h4 {
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+}
+
+p {
   font-family: "Open Sans", sans-serif;
-  line-height: 1.5rem;
+  line-height: 1.4rem;
+}
+
+footer p {
+  line-height: 1.2rem;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.skip-link {
+  position: absolute;
+  left: -2000px;
+  top: 0px;
+  background-color: white;
+  color: black;
+  z-index: 10;
+  overflow: none;
+}
+.skip-link:focus {
+  left: 0;
 }
 
 .grayText {
@@ -289,9 +322,20 @@ header {
   height: 50vh;
   max-width: 1600px;
   margin: 0 auto;
+  position: relative;
 }
 header h1 {
   margin: 0;
+}
+header::after {
+  content: "";
+  width: 4px;
+  height: 100px;
+  position: absolute;
+  border-left: 1px solid black;
+  left: 50%;
+  top: 93%;
+  opacity: 0.3;
 }
 
 .blogHeader {
@@ -300,6 +344,19 @@ header h1 {
   background-size: 150%;
   background-position: 50% 65%;
   height: 500px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -2000px;
+  top: 0px;
+  background-color: white;
+  color: black;
+  z-index: 10;
+  overflow: none;
+}
+.skip-link:focus {
+  left: 0;
 }
 
 nav {
@@ -311,6 +368,13 @@ nav {
 nav .logoContainer {
   order: -1;
   padding: 5px;
+}
+nav li a {
+  color: black;
+  text-decoration: none;
+}
+nav li a:hover {
+  text-decoration: line-through;
 }
 
 .leftNav,
@@ -396,6 +460,17 @@ nav .logoContainer {
   background-position: 55% 5%;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+.productDetails::after {
+  content: "";
+  width: 4px;
+  height: 60px;
+  position: absolute;
+  border-left: 1px solid black;
+  left: 50%;
+  top: 100%;
+  opacity: 0.3;
 }
 .productDetails .productDetailsContainer {
   padding: 25px 0 25px 0;
@@ -424,6 +499,10 @@ nav .logoContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.teamIntro {
+  padding-top: 70px;
 }
 
 .teamIntro h2 {
@@ -493,7 +572,7 @@ nav .logoContainer {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
   background-color: #F6F6F6;
-  padding: 15px 30px 15px 30px;
+  padding: 15px;
   color: #333333;
   font-weight: 700;
 }
@@ -530,7 +609,6 @@ footer a {
 }
 .footerContact p {
   margin-bottom: 3px;
-  padding: 0;
 }
 .footerContact .socialLinks {
   display: flex;
@@ -581,12 +659,17 @@ footer a {
   margin: 0 auto;
 }
 
+.blogHeader {
+  background-position: 50% 35%;
+  height: 400px;
+}
+
 .blogPost {
   padding-bottom: 50px;
 }
 .blogPost h2 {
   font-weight: 700;
-  padding-top: 25px;
+  padding-top: 15px;
 }
 .blogPost .breadcrumb {
   padding-top: 10px;
@@ -761,7 +844,58 @@ header.contactHeader .contactPageWrapper {
   background-image: url(/assets/contact-1.jpeg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: 50% 45%;
+  position: relative;
+}
+header.contactHeader h2 {
+  position: absolute;
+  top: 90px;
+  left: 25px;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 2.4rem;
+}
+header.contactHeader h2::before {
+  content: "";
+  width: 20px;
+  position: absolute;
+  border-top: 2px solid black;
+  left: 2px;
+  top: -30px;
+}
+
+.contactDetails {
+  margin-top: 150px;
+  padding: 10px;
+}
+.contactDetails:first-child {
+  text-align: center;
+}
+.contactDetails .textContainer {
+  margin-bottom: 25px;
+}
+.contactDetails .textContainer h3 {
+  text-align: center;
+}
+.contactDetails i {
+  margin: 10px 0 10px 0;
+}
+.contactDetails p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.contactCommentForm h3 {
+  padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contactPageImg {
+  width: 100vw;
+}
+.contactPageImg img {
+  width: 100%;
 }
 
 @media (min-width: 750px) {
@@ -788,6 +922,7 @@ header.contactHeader .contactPageWrapper {
   .blogHeader {
     background-size: contain;
     background-position: 50% 50%;
+    height: 500px;
   }
 
   .relatedImgGallery {
@@ -796,8 +931,18 @@ header.contactHeader .contactPageWrapper {
     gap: 20px;
     justify-content: space-between;
   }
+
+  .contactDetails .textContainer {
+    width: 600px;
+    margin: 0 auto;
+  }
 }
 @media (min-width: 1200px) {
+  header {
+    background-size: cover;
+    height: 900px;
+  }
+
   .burgerMenu {
     display: none;
   }
@@ -815,10 +960,8 @@ header.contactHeader .contactPageWrapper {
   }
 
   .logoContainer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
+    margin: 0 auto;
+    width: 150px;
   }
 
   .leftNav {
@@ -989,7 +1132,7 @@ header.contactHeader .contactPageWrapper {
 
   .blogHeader {
     background-size: cover;
-    height: 75vh;
+    height: 65vh;
     max-width: 1400px;
     margin-bottom: 100px;
   }
@@ -1069,5 +1212,56 @@ header.contactHeader .contactPageWrapper {
     width: max-content;
     padding: 0;
     padding-top: 30px;
+  }
+
+  .contactHeader .contactPageWrapper {
+    max-width: 1600px;
+  }
+  .contactHeader .contactPageWrapper h2 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    top: 120px;
+    left: 150px;
+  }
+
+  .contactDetails .textContainer {
+    text-align: left;
+    max-width: 500px;
+    margin-left: 125px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .contactDetails .textContainer h3 {
+    text-align: left;
+  }
+
+  .iconContainers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  .iconContainers .indContainer {
+    text-align: left;
+  }
+  .iconContainers .indContainer i {
+    font-size: 1.5rem;
+  }
+
+  .contactCommentForm .wrapper {
+    max-width: 1000px;
+  }
+  .contactCommentForm h3 {
+    text-align: left;
+    padding: 0;
+    margin-top: 50px;
+  }
+  .contactCommentForm p {
+    margin-bottom: 50px;
+  }
+
+  .contactPageImg {
+    max-width: 1600px;
   }
 }/*# sourceMappingURL=styles.css.map */

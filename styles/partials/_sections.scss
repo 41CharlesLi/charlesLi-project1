@@ -71,6 +71,17 @@
     background-position: 55% 5%;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    &::after{
+        content: "";
+        width: 4px;
+        height: 60px;
+        position: absolute;
+        border-left: 1px solid black;
+        left: 50%;
+        top: 100%;
+        opacity: .3;
+    }
     .productDetailsContainer{
         padding: 25px 0 25px 0;
     }
@@ -105,6 +116,10 @@
 //end of product details section
 
 //start of team gallery
+.teamIntro {
+    padding-top: 70px;
+}
+
 .teamIntro h2 {
     font-weight: lighter;
     text-align: center;
@@ -176,7 +191,7 @@
         font-family: $headingFont;
         text-decoration: none;
         background-color: $offWhite;
-        padding:15px 30px 15px 30px;
+        padding: 15px;
         color: $black;
         font-weight: 700;
     }
@@ -218,7 +233,6 @@ footer {
 }
     p{
         margin-bottom: 3px;
-        padding: 0;
     }
     .socialLinks{
         display: flex;
@@ -282,12 +296,17 @@ footer {
 
 //START BLOG PAGE
 //start main blog section
+.blogHeader {
+    background-position: 50% 35%;
+    height: 400px;
+}
+
 
 .blogPost {
     padding-bottom: 50px;
     h2 {
     font-weight: 700;
-    padding-top: 25px;    
+    padding-top: 15px;
 }
     .breadcrumb{
         padding-top: 10px;
@@ -485,12 +504,69 @@ footer {
 header.contactHeader {
     background-image: none;
     height: 100px;
-.contactPageWrapper {
+    .contactPageWrapper {
     width: 1600px;
     height: 300px;
     background-image: url(/assets/contact-1.jpeg);
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: 50% 45%;
+    position: relative;
 }
+    h2{
+        position:absolute;
+        top: 90px;
+        left: 25px;
+        font-size: 2rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        line-height: 2.4rem;
+        &::before {
+            content: "";
+            width: 20px;
+            position: absolute;
+            border-top: 2px solid black;
+            left: 2px;
+            top: -30px;
+        }
+    }
+
+
+}
+
+.contactDetails {
+    margin-top: 150px;
+    padding: 10px;
+    &:first-child {
+    text-align: center;
+}
+    .textContainer {
+    margin-bottom: 25px;
+        h3 {
+            text-align: center;
+        }
+    }
+    i{
+        margin: 10px 0 10px 0;
+    }
+    p{
+        margin: 0;
+        margin-bottom: 5px;
+        
+    }
+
+}
+
+.contactCommentForm {
+    h3{
+        padding: 10px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+.contactPageImg {
+    width: 100vw;
+    img {
+        width: 100%
+    }
 }

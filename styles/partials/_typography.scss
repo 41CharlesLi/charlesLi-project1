@@ -15,10 +15,45 @@ h2 {
     font-weight: 500;
 }
 
-p,
-a {
+h3{ 
+    font-size: 1rem;
+    line-height: 24px;
+    letter-spacing: 1.8px;
+}
+
+h4 {
+    letter-spacing: .2rem;
+    font-size: .8rem;
+}
+
+p {
     font-family: $bodyFont;
-    line-height: 1.5rem;
+    line-height: 1.4rem;
+}
+
+footer {
+    p {
+        line-height: 1.2rem;
+    }
+}
+
+a{
+    font-family: $headingFont;
+    color: black;
+    text-decoration: none;
+}
+
+.skip-link{
+    position: absolute;
+    left: -2000px;
+    top: 0px;
+    background-color: white;
+    color: black;
+    z-index: 10;            
+    overflow: none;
+    &:focus{
+        left: 0;
+    }                                       
 }
 
 .grayText {

@@ -6,8 +6,19 @@ header {
     height: 50vh;
     max-width: 1600px;
     margin: 0 auto;
+    position:relative;
     h1 {
         margin: 0;
+    }
+    &::after{
+        content: "";
+        width: 4px;
+        height: 100px;
+        position: absolute;
+        border-left: 1px solid black;
+        left: 50%;
+        top: 93%;
+        opacity: .3;
     }
 }
 

@@ -12,6 +12,10 @@
     <script src="https://kit.fontawesome.com/13dd608ac9.js" crossorigin="anonymous"></script>
 </head>
 <body>
+      <!--skip link-->
+	<a href="#mainContent" class="skip-link">Skip to main content</a>
+
+    <!--Header-->
     <header class="blogHeader contactHeader">
         <nav>
             <div class="burgerMenu">
@@ -20,17 +24,17 @@
                 <div></div>
             </div>
             <div class="leftNav">
-                <li>HOME</li>
-                <li>BLOG</li>
-                <li>PORTFOLIO</li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="./blog.html">BLOG</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
             </div>
             <div class="logoContainer">
-                <h1>CREATIVE</h1>
+                <h1><a href="./index.html">CREATIVE</a></h1>
             </div>
             <div class="rightNav">
                 <ul>
-                    <li>SHOP</li>
-                    <li>CONTACT</li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
                     <li><i class="fa-solid fa-magnifying-glass"></i></li>
                     <li>
                         <i class="fa-solid fa-bag-shopping">
@@ -44,29 +48,36 @@
     <header class="contactHeader">
        <div class="wrapper contactPageWrapper">
         <h2 class="contactHeaderText">
-            CONTACT US
+            CONTACT <br>US
         </h2>
        </div>
     </header>
-    <main>
+
+
+    <main id="mainContent">
+
+        <!--Contact details section-->
         <section class="contactDetails">
             <div class="wrapper">
                 <div class="textContainer">
                     <h3>CONTACT DETAILS</h3>
-                    <p>If you need any help, pleazse contact us or send us an email or go to our forum. We are sure that you can receive our reply as soon as possible</p>
+                    <p class="grayText">If you need any help, pleazse contact us or send us an email or go to our forum. We are sure that you can receive our reply as soon as possible</p>
                 </div>
                 <div class="iconContainers">
                     <div class="indContainer">
-                        <i class="fa-regular fa-mobile-screen-button"></i>
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h4>PHONE</h4>                        
                         <p class="grayText">Phone 01: 123 456 7890</p>
                         <p class="grayText">Phone 02: 472 724 7274</p>
                     </div>
                     <div class="indContainer">
-                        <i class="fa-regular fa-location-dot"></i>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h4>ADDRESS</h4>
                         <p class="grayText">6591 Orchard Street, Toronto, Ontario</p>
                     </div>
                     <div class="indContainer">
                         <i class="fa-regular fa-envelope"></i>
+                        <h4>EMAIL</h4>
                         <p class="grayText">contact@creative.com</p>
                         <p class="grayText">info@creative.com</p>
                     </div>
@@ -74,9 +85,11 @@
             </div>
         </section>
 
-        <section class="commentForm">
+        <!--Comment form-->
+        <section class="contactCommentForm commentForm">
             <div class="wrapper">
                 <h3>GET IN TOUCH WITH US</h3>
+                <p class="grayText">If you have any questions, please don't hesitate to send us a message.</p>
                     <form action="">
                         <label for="name" class="sr-only">Name</label>
                         <input type="text" id="name" class="firstRow" placeholder="Enter your name...">
@@ -99,6 +112,7 @@
             <img src="./assets/contact-2.jpeg" alt="women calling someone she absolutely disdains">
         </div>
 
+        <!--footer-->
         <footer>
             <div class="wrapper">
                 <div class="footerContact">
