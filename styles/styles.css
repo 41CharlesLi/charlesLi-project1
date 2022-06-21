@@ -285,19 +285,6 @@ a {
   text-decoration: none;
 }
 
-.skip-link {
-  position: absolute;
-  left: -2000px;
-  top: 0px;
-  background-color: white;
-  color: black;
-  z-index: 10;
-  overflow: none;
-}
-.skip-link:focus {
-  left: 0;
-}
-
 .grayText {
   font-size: 0.8rem;
   line-height: 1.2rem;
@@ -327,7 +314,8 @@ header {
 header h1 {
   margin: 0;
 }
-header::after {
+
+.mainHeader::after {
   content: "";
   width: 4px;
   height: 100px;
@@ -852,7 +840,6 @@ header.contactHeader h2 {
   left: 25px;
   font-size: 2rem;
   font-weight: 800;
-  letter-spacing: 2px;
   line-height: 2.4rem;
 }
 header.contactHeader h2::before {
@@ -1220,16 +1207,14 @@ header.contactHeader h2::before {
   .contactHeader .contactPageWrapper h2 {
     font-size: 3rem;
     line-height: 3.5rem;
-    top: 120px;
+    top: 130px;
     left: 150px;
   }
 
   .contactDetails .textContainer {
     text-align: left;
     max-width: 500px;
-    margin-left: 125px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px 0 50px 125px;
   }
   .contactDetails .textContainer h3 {
     text-align: left;

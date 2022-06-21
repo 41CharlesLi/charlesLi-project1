@@ -10,6 +10,9 @@ header {
     h1 {
         margin: 0;
     }
+}
+
+.mainHeader {
     &::after{
         content: "";
         width: 4px;

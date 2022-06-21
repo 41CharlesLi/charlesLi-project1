@@ -97,6 +97,7 @@
             text-align: center;
         }
         p {
+            //shopping bag counter
             font-size: .5rem;
             position: absolute;
             top: 6px;
@@ -354,8 +355,6 @@
                         border-bottom: 10px solid transparent;
                         left: -38px;
                         top: 5px;
-                        
-            
                         //https://codingislove.com/css-speech-bubbles/
                     }
                 }
@@ -399,7 +398,7 @@
             h2 {
                 font-size: 3rem;
                 line-height: 3.5rem;
-                top: 120px;
+                top: 130px;
                 left: 150px;
             }
         }
@@ -410,9 +409,7 @@
         .textContainer {
             text-align: left;
             max-width: 500px;
-            margin-left: 125px;
-            margin-top: 50px;
-            margin-bottom: 50px;
+            margin: 50px 0 50px 125px;
             h3{
                 text-align: left;
             }

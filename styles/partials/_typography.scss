@@ -43,19 +43,6 @@ a{
     text-decoration: none;
 }
 
-.skip-link{
-    position: absolute;
-    left: -2000px;
-    top: 0px;
-    background-color: white;
-    color: black;
-    z-index: 10;            
-    overflow: none;
-    &:focus{
-        left: 0;
-    }                                       
-}
-
 .grayText {
     font-size: .8rem;
     line-height: 1.2rem;
