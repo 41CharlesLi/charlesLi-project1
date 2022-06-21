@@ -36,6 +36,13 @@
         justify-content: space-between;
     }
 
+    .blogPost {
+        h2{
+            padding-top: 50px;
+            font-size: 2rem;
+        }
+    }
+
 
     //CONTACT PAGE START
 
@@ -167,7 +174,15 @@
             }
         }
         .productTextContainer{
-            max-width: 300px;
+            max-width: 275px;
+            .grayText {
+                text-align: left;
+            }
+            h2 {
+                text-align: left;
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+            }
         }
     }
 
@@ -181,8 +196,8 @@
         width: 1600px;
         display: grid;
         grid-template: 
-        "a a a a" 20%
-        "b b b b" auto;
+        "a a a a"
+        "b b b b";
         grid-gap: 15px;
         margin-bottom: 50px;
         .teamGalleryTextContainer {
@@ -190,7 +205,7 @@
             grid-column-end: 3;
             padding: 100px 0 15px 25px;
             text-align: left;
-            width: 570px;
+            width: 555px;
             height:270px
         }
         p {
@@ -201,6 +216,8 @@
             }
             a {
                 margin: 0;
+                text-align: center;
+                line-height: 1.3rem;
             }
         }
 //team gallery end
@@ -221,7 +238,7 @@
                 padding: 0;
             }
             p{
-                padding: 0 25px 0 25px;
+                padding: 0 175px 0 175px;
             }
         }
         .contactImgContainer {
@@ -295,6 +312,7 @@
             flex-direction: row;
             flex-wrap: nowrap;
             justify-content: space-between;
+            padding-top: 50px;
         .textContainer {
             padding-top: 10px;
         }
@@ -305,7 +323,7 @@
         }
 
         .blogSocialLinks {
-            padding-top: 50px;
+            padding-top: 30px;
         }
     }
 
@@ -447,6 +465,8 @@
     .contactPageImg {
         max-width: 1600px;
     }
-
+    .footerLogo{
+        padding: 100px;
+    }
 }
 

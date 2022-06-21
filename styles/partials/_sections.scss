@@ -135,10 +135,11 @@
 .teamGalleryTextContainer{
     background-color: $offWhite;
     text-align: center;
-    padding: 35px 15px 5px 15px;
+    padding: 35px 50px 5px 50px;
     h3{
         opacity: .6;
         margin-bottom: 25px;
+        font-weight: 500;
     }
     p{
         margin-bottom: 50px;
@@ -191,107 +192,14 @@
         font-family: $headingFont;
         text-decoration: none;
         background-color: $offWhite;
-        padding: 15px;
+        padding: 20px;
         color: $black;
         font-weight: 700;
     }
 }
 //end of contact us
 
-//start of footer
-footer {
-    background-color: $black;
-    color:$offWhite;
-    h3{
-        font-weight: 300;
-        opacity: .7;
-        margin: 0;
-        margin-top: 30px;
-    }
 
-    p, 
-    a {
-        opacity: .7;
-        font-size: 0.8rem;
-    }
-
-    a{
-        text-decoration: none;
-        color:$offWhite;
-    }
-}
-
-.recentPosts li:before{ 
-    content:"• "; font-size:10pt; 
-}
-
-.footerContact {
-    h3 {
-        margin-top: 0;
-        margin-bottom: 20px;
-        padding-top: 30px;
-}
-    p{
-        margin-bottom: 3px;
-    }
-    .socialLinks{
-        display: flex;
-        ul {
-            li {
-                display: inline-block;
-                list-style: none;
-                margin: 15px 15px 0 0;
-            }
-        }
-    }
-}
-
-.recentPosts {
-    h3{
-        margin-bottom: 20px;
-    }
-    li{
-        margin-bottom: 3px;
-    }
-}
-
-.twitterWidget{
-    h3 {
-        margin-bottom: -5px;
-
-    }
-    p {
-        margin-bottom: 15px;
-        border: none;
-}
-    form {
-        display: flex;
-        flex-direction: row;
-    }
-    input {
-        padding: 4px;
-    }
-    button {
-        background-color: $primary;
-        padding: 5px;
-    }
-}
-
-.footerLogo{
-    background-color: $black;
-    margin-top: 25px;
-    height: 100px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    border-top: 1px solid rgba($offWhite, 0.2);
-    
-    h3{
-        color: $white;
-        margin: 0 auto;
-    }
-}
-//end footer
 //END MAIN PAGE
 
 //START BLOG PAGE
@@ -365,8 +273,11 @@ footer {
         gap: 25px;
     }
 }
+
+
     .boldText {
         font-weight: 700;
+        font-size: .8rem
     }
 
     .blogSocialLinks {
