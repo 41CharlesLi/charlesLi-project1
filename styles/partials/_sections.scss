@@ -394,7 +394,6 @@
     }
     }
     
-
     button {
         padding: 10px;
         margin: 10px;
@@ -402,6 +401,9 @@
         align-self: center;
         font-family: $headingFont;
         font-size: 1.2rem;
+        opacity:.7;
+        line-height: 1;
+        font-weight: bold;
         &:hover{
             text-decoration: underline;
             text-underline-offset: 15px;
@@ -412,10 +414,12 @@
 }
 
 //CONTACT PAGE START
-header.contactHeader {
+
+.contactHeader {
     background-image: none;
     height: 100px;
-    .contactPageWrapper {
+}
+.contactHeaderImg {
     width: 1600px;
     height: 300px;
     background-image: url(/assets/contact-1.jpeg);
@@ -423,28 +427,28 @@ header.contactHeader {
     background-size: 100%;
     position: relative;
 }
-    h2{
-        position:absolute;
-        top: 90px;
-        left: 25px;
-        font-size: 2rem;
-        font-weight: 800;
-        line-height: 2.4rem;
-        &::before {
-            content: "";
-            width: 20px;
-            position: absolute;
-            border-top: 2px solid black;
-            left: 2px;
-            top: -30px;
-        }
+
+.contactPageWrapper{
+    max-width: 1000px;
+    position: relative;
+    top: -120px;
+h2{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.5rem;
+    
+    &::before {
+        content: "";
+        width: 20px;
+        position: absolute;
+        border-top: 2px solid black;
+        left: 2px;
+        top: -30px;
     }
-
-
+}
 }
 
 .contactDetails {
-    margin-top: 150px;
     padding: 10px;
         &:first-child {
         text-align: center;

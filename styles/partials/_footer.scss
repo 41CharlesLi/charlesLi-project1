@@ -69,6 +69,7 @@ footer {
     }
     input {
         padding: 12px;
+        border: none;
         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
             font-family: $bodyFont;
             font-size: .8rem;

@@ -306,7 +306,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 50vh;
+  height: 65vh;
   max-width: 1600px;
   margin: 0 auto;
   position: relative;
@@ -396,6 +396,7 @@ footer a {
 }
 .twitterWidget input {
   padding: 12px;
+  border: none;
 }
 .twitterWidget input::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -462,7 +463,8 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 10px;
+  align-items: center;
+  position: relative;
 }
 nav .logoContainer {
   order: -1;
@@ -847,17 +849,21 @@ nav li a:hover {
   align-self: center;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
+  opacity: 0.7;
+  line-height: 1;
+  font-weight: bold;
 }
 .commentForm button:hover {
   text-decoration: underline;
   text-underline-offset: 15px;
 }
 
-header.contactHeader {
+.contactHeader {
   background-image: none;
   height: 100px;
 }
-header.contactHeader .contactPageWrapper {
+
+.contactHeaderImg {
   width: 1600px;
   height: 300px;
   background-image: url(/assets/contact-1.jpeg);
@@ -865,15 +871,18 @@ header.contactHeader .contactPageWrapper {
   background-size: 100%;
   position: relative;
 }
-header.contactHeader h2 {
-  position: absolute;
-  top: 90px;
-  left: 25px;
-  font-size: 2rem;
-  font-weight: 800;
-  line-height: 2.4rem;
+
+.contactPageWrapper {
+  max-width: 1000px;
+  position: relative;
+  top: -120px;
 }
-header.contactHeader h2::before {
+.contactPageWrapper h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3.5rem;
+}
+.contactPageWrapper h2::before {
   content: "";
   width: 20px;
   position: absolute;
@@ -883,7 +892,6 @@ header.contactHeader h2::before {
 }
 
 .contactDetails {
-  margin-top: 150px;
   padding: 10px;
 }
 .contactDetails:first-child {
@@ -917,6 +925,10 @@ header.contactHeader h2::before {
 }
 
 @media (min-width: 750px) {
+  header {
+    background-size: cover;
+  }
+
   .productDetails {
     background-position: 65% 5%;
   }
@@ -930,6 +942,9 @@ header.contactHeader h2::before {
     margin: 0 auto;
   }
 
+  footer {
+    padding-top: 75px;
+  }
   footer .wrapper {
     display: flex;
     flex-direction: row;
@@ -941,6 +956,7 @@ header.contactHeader h2::before {
     background-size: contain;
     background-position: 50% 50%;
     height: 500px;
+    max-height: 580px;
   }
 
   .relatedImgGallery {
@@ -966,6 +982,12 @@ header.contactHeader h2::before {
     height: 900px;
   }
 
+  nav {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
   .burgerMenu {
     display: none;
   }
@@ -975,16 +997,16 @@ header.contactHeader h2::before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0 115px 0 115px;
     margin: 0 20px 0 20px;
   }
   .leftNav li,
 .rightNav li {
-    margin: 10px 5px 0px 10px;
+    margin: 0px 5px 0px 10px;
   }
 
   .logoContainer {
     margin: 0 auto;
-    width: 150px;
   }
 
   .leftNav {
@@ -992,13 +1014,14 @@ header.contactHeader h2::before {
   }
   .leftNav li {
     list-style: none;
+    padding-top: 5px;
   }
 
   .rightNav .fa-solid {
     font-size: 1.3rem;
   }
   .rightNav li {
-    display: inline-block;
+    display: inline;
   }
   .rightNav .fa-bag-shopping {
     position: relative;
@@ -1140,6 +1163,15 @@ header.contactHeader h2::before {
     height: 600px;
   }
 
+  .contactDetails .wrapper {
+    max-width: 1000px;
+  }
+  .contactDetails .wrapper .textContainer {
+    text-align: left;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
   .recentPosts h3 {
     text-align: center;
   }
@@ -1164,8 +1196,8 @@ header.contactHeader h2::before {
   }
 
   .blogHeader {
-    background-size: cover;
-    height: 65vh;
+    background-size: contain;
+    height: 600px;
     max-width: 1400px;
     margin-bottom: 100px;
   }
@@ -1258,6 +1290,10 @@ header.contactHeader h2::before {
     left: 150px;
   }
 
+  .blogMain {
+    margin-top: -75px;
+  }
+
   .contactDetails .textContainer {
     text-align: left;
     max-width: 500px;
@@ -1278,7 +1314,7 @@ header.contactHeader h2::before {
     text-align: left;
   }
   .iconContainers .indContainer i {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 
   .contactCommentForm .wrapper {
