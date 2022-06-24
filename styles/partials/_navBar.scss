@@ -58,6 +58,7 @@ nav {
 #menuToggle:checked ~ .menuBox {
     visibility: visible;
     right: 0;
+    overflow: scroll;
 }
 
 .menuBtn {

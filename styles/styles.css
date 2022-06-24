@@ -539,6 +539,7 @@ nav li a:hover {
 #menuToggle:checked ~ .menuBox {
   visibility: visible;
   right: 0;
+  overflow: scroll;
 }
 
 .menuBtn {
@@ -805,7 +806,7 @@ nav li a:hover {
 .blogHeader {
   background-position: 50% 60%;
   height: 400px;
-  background-size: 130%;
+  background-size: cover;
 }
 
 .blogPost {
@@ -1098,6 +1099,7 @@ nav li a:hover {
     background-position: 50% 50%;
     height: 500px;
     max-height: 580px;
+    max-width: 1200px;
   }
 
   .relatedImgGallery {
