@@ -545,7 +545,7 @@ nav li a:hover {
 .menuBtn {
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 25px;
   right: 10px;
   width: 26px;
@@ -989,18 +989,19 @@ nav li a:hover {
 }
 
 .contactHeaderImg {
-  width: 1600px;
-  height: 300px;
+  height: 225px;
   background-image: url(/assets/contact-1.jpeg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   position: relative;
+  background-position: 10% 75%;
 }
 
 .contactPageWrapper {
   max-width: 1000px;
   position: relative;
-  top: -120px;
+  top: -55px;
+  margin-bottom: 50px;
 }
 .contactPageWrapper h2 {
   font-size: 3rem;

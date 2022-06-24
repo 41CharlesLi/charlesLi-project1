@@ -36,9 +36,9 @@ nav {
 .rightNav {
     display: none;
 }
+
 //hamburger menu by:
 //https://codepen.io/andreykrokhin/pen/mGEqja
-//
 
 #menuToggle {
     opacity: 0;
@@ -63,7 +63,7 @@ nav {
 .menuBtn {
     display: flex;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 25px;
     right: 10px;
 
