@@ -274,6 +274,10 @@ button {
   cursor: pointer;
 }
 
+.commentArea {
+  resize: none;
+}
+
 h1,
 h2,
 h3,
@@ -546,7 +550,7 @@ nav li a:hover {
   display: flex;
   align-items: center;
   position: fixed;
-  top: 25px;
+  top: 28px;
   right: 10px;
   width: 26px;
   height: 26px;
@@ -805,7 +809,7 @@ nav li a:hover {
 
 .blogHeader {
   background-position: 50% 60%;
-  height: 400px;
+  height: 325px;
   background-size: cover;
 }
 
