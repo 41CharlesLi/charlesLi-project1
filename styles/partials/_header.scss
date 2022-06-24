@@ -7,8 +7,8 @@ header {
     max-width: 1600px;
     margin: 0 auto;
     position: relative;
-    h1 {
-        margin: 0;
+    i:hover {
+        cursor: pointer;
     }
 }
 
@@ -29,6 +29,5 @@ header {
     background-image: url(../assets/blog-1.jpeg);
     background-repeat: no-repeat;
     background-size: 150%;
-    background-position: 50% 65%;
     height: 500px;
 }

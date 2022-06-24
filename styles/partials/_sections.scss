@@ -168,7 +168,6 @@
     background-image: url(/assets/home-10.jpeg);
     background-position: bottom;
     padding: 100px 15px 75px 15px;
-    align-items: center;
     img {
         display: none;
     }
@@ -285,6 +284,9 @@
             flex-direction: row;
             li {
                 padding: 0 15px 3px 15px;
+                i:hover {
+                    cursor: pointer;
+                }
             }
         }
     }
