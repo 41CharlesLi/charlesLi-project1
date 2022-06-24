@@ -803,8 +803,9 @@ nav li a:hover {
 }
 
 .blogHeader {
-  background-position: 50% 35%;
+  background-position: 50% 60%;
   height: 400px;
+  background-size: 130%;
 }
 
 .blogPost {
@@ -1037,6 +1038,9 @@ nav li a:hover {
   margin: 0;
   margin-bottom: 5px;
 }
+.contactDetails a {
+  display: inherit;
+}
 
 .contactCommentForm h3 {
   padding: 10px;
@@ -1054,6 +1058,15 @@ nav li a:hover {
 @media (min-width: 750px) {
   header {
     background-size: cover;
+  }
+
+  .brandingImg .circleText {
+    left: -60px;
+    top: -60px;
+  }
+  .brandingImg .circleText img {
+    width: 175px;
+    height: auto;
   }
 
   .productDetails {
@@ -1081,7 +1094,7 @@ nav li a:hover {
   }
 
   .blogHeader {
-    background-size: contain;
+    background-size: cover;
     background-position: 50% 50%;
     height: 500px;
     max-height: 580px;
@@ -1131,6 +1144,7 @@ nav li a:hover {
     justify-content: space-between;
     align-items: center;
     margin: 0 20px 0 20px;
+    padding: 0 50px;
   }
   .desktopNav li,
 .leftNav li,
@@ -1333,10 +1347,11 @@ nav li a:hover {
   }
 
   .blogHeader {
-    background-size: contain;
-    height: 600px;
-    max-width: 1400px;
+    background-size: cover;
+    height: 700px;
+    max-height: 700px;
     margin-bottom: 100px;
+    max-width: 1500px;
   }
 
   .blogPost h2 {

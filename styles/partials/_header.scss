@@ -1,5 +1,5 @@
 header {
-    background-image: url(../assets/home-1.jpeg);
+    background-image: url(../assets/home-1.jpeg); //next time, set the img on the ind pages, not the header element
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -13,6 +13,7 @@ header {
 }
 
 .mainHeader {
+    // height: 75vh;
     &::after {
         content: "";
         width: 4px;

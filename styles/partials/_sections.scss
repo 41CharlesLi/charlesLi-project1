@@ -201,8 +201,9 @@
 //START BLOG PAGE
 //start main blog section
 .blogHeader {
-    background-position: 50% 35%;
+    background-position: 50% 60%;
     height: 400px;
+    background-size: 130%;
 }
 
 .blogPost {
@@ -461,6 +462,9 @@
     p {
         margin: 0;
         margin-bottom: 5px;
+    }
+    a {
+        display: inherit;
     }
 }
 

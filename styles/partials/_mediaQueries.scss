@@ -5,6 +5,15 @@
     header {
         background-size: cover;
     }
+    .brandingImg .circleText {
+        left: -60px;
+        top: -60px;
+        img {
+            width: 175px;
+            height: auto;
+        }
+    }
+
     .productDetails {
         background-position: 65% 5%;
     }
@@ -31,7 +40,7 @@
 
     //BLOG PAGE START
     .blogHeader {
-        background-size: contain;
+        background-size: cover;
         background-position: 50% 50%;
         height: 500px;
         max-height: 580px;
@@ -89,6 +98,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 0 20px 0 20px;
+        padding: 0 50px;
         li {
             margin: 0px 5px 0px 10px;
         }
@@ -322,10 +332,11 @@
 
     //BLOG PAGE START
     .blogHeader {
-        background-size: contain;
-        height: 600px;
-        max-width: 1400px;
+        background-size: cover;
+        height: 700px;
+        max-height: 700px;
         margin-bottom: 100px;
+        max-width: 1500px;
     }
 
     //main blog section
