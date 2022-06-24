@@ -1,162 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
-    <script src="https://kit.fontawesome.com/13dd608ac9.js" crossorigin="anonymous"></script>
-</head>
-<body>
-      <!--skip link-->
-	<a href="#mainContent" class="skip-link">Skip to main content</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/13dd608ac9.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <!--skip link-->
+        <a href="#mainContent" class="skip-link">Skip to main content</a>
 
-    <!--Header-->
-    <header class="contactHeader">
-        <nav>
-            <div class="burgerMenu">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <div class="leftNav">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="./blog.html">BLOG</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-            </div>
-            <div class="logoContainer">
-                <h1><a href="./index.html">CREATIVE</a></h1>
-            </div>
-            <div class="rightNav">
-                <ul>
-                    <li><a href="#">SHOP</a></li>
-                    <li><a href="./contact.html">CONTACT</a></li>
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                    <li>
-                        <i class="fa-solid fa-bag-shopping">
-                            <p class="bagCounter">2</p>
-                        </i>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <header class="contactHeaderImg">
-    
-    </header>
+        <!--Header-->
+        <header class="contactHeader">
+            <nav>
+                <div class="hamburger-menu desktop-hidden">
+                    <input id="menuToggle" type="checkbox" />
+                    <label class="menuBtn" for="menuToggle">
+                        <span></span>
+                    </label>
 
-    <div class="wrapper contactPageWrapper">
-        <h2 class="contactHeaderText">
-            CONTACT <br>US
-        </h2>
-   </div>
-
-    <main id="mainContent" class="blogMain">
-
-        <!--Contact details section-->
-        <section class="contactDetails">
-            <div class="wrapper">
-                <div class="textContainer">
-                    <h3>CONTACT DETAILS</h3>
-                    <p class="grayText">If you need any help, pleazse contact us or send us an email or go to our forum. We are sure that you can receive our reply as soon as possible</p>
+                    <ul class="menuBox">
+                        <li>
+                            <a class="menuItem" href="./index.html">HOME</a>
+                        </li>
+                        <li><a class="menuItem" href="./blog.html">BLOG</a></li>
+                        <li><a class="menuItem" href="#">PORTFOLIO</a></li>
+                        <li><a class="menuItem" href="#">SHOP</a></li>
+                        <li>
+                            <a class="menuItem" href="./contact.html"
+                                >CONTACT</a
+                            >
+                        </li>
+                        <li>
+                            <i
+                                class="menuItem fa-solid fa-magnifying-glass"
+                            ></i>
+                        </li>
+                        <li>
+                            <i class="menuItem fa-solid fa-bag-shopping">
+                                <p class="bagCounter">2</p>
+                            </i>
+                        </li>
+                    </ul>
                 </div>
-                <div class="iconContainers">
-                    <div class="indContainer">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <h4>PHONE</h4>                        
-                        <p class="grayText">Phone 01: 123 456 7890</p>
-                        <p class="grayText">Phone 02: 472 724 7274</p>
-                    </div>
-                    <div class="indContainer">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <h4>ADDRESS</h4>
-                        <p class="grayText">6591 Orchard Street, Toronto, Ontario</p>
-                    </div>
-                    <div class="indContainer">
-                        <i class="fa-solid fa-envelope"></i>
-                        <h4>EMAIL</h4>
-                        <p class="grayText">contact@creative.com</p>
-                        <p class="grayText">info@creative.com</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!--Comment form-->
-        <section class="contactCommentForm commentForm">
-            <div class="wrapper">
-                <h3>GET IN TOUCH WITH US</h3>
-                <p class="grayText">If you have any questions, please don't hesitate to send us a message.</p>
-                    <form action="">
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" id="name" class="firstRow" placeholder="Enter your name...">
-            
-                        <label for="email" class="sr-only">Email</label>
-                        <input type="email" id="email" class="firstRow" placeholder="youremail@domain.com">
-            
-                        <label for="subject" class="sr-only">subject(optional)</label>
-                        <input type="text" id="subject" class="firstRow" placeholder="Subject (Optional)">
-            
-                        <label for="comment" class="sr-only">Leave your comment</label>
-                        <textarea id="comment" cols="30" rows="10" class="commentArea" placeholder="Here goes your comment"></textarea>
-            
-                        <button type="submit" class="button submit">SEND MESSAGE</button>
-                    </form>
-            </div>
-        </section>
-
-        <div class="wrapper contactPageImg">
-            <img src="./assets/contact-2.jpeg" alt="woman on phone receiving positive news">
-        </div>
-
-        <!--footer-->
-        <footer>
-            <div class="wrapper">
-                <div class="footerContact">
-                    <h3>CONTACT US</h3>
-                    <p>6591 Orchard Street, NY 10002, United States</p>
-                    <p>Email: contact@onepro.co</p>
-                    <p>Phone 01: +00 (9) 123 3456 789</p>
-                    <p>Phone 02: +00 (9) 123 3456 788</p>
-                    <p>Fax: +00 (9) 123 3216 449</p>
-                    <div class="socialLinks">
+                <div class="desktopNav">
+                    <div class="flexOrder">
+                        <ul class="leftNav">
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="./blog.html">BLOG</a></li>
+                            <li><a href="#">PORTFOLIO</a></li>
+                        </ul>
+                    </div>
+                    <div class="logoContainer">
+                        <h1><a href="./index.html">CREATIVE</a></h1>
+                    </div>
+                    <div class="rightNav">
                         <ul>
-                            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                            <li><a href="#">SHOP</a></li>
+                            <li><a href="./contact.html">CONTACT</a></li>
+                            <li>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bag-shopping">
+                                    <p class="bagCounter">2</p>
+                                </i>
+                            </li>
                         </ul>
                     </div>
                 </div>
-    
-                <div class="recentPosts">
-                    <h3>RECENT POSTS</h3>
-                    <ul>
-                        <li><a href="">Conversion hackathon partner</a></li>
-                        <li><a href="">Network channels entrepreneur</a></li>
-                        <li><a href="">Return on investment</a></li>
-                        <li><a href="">Assets interaction design venture</a></li>
-                        <li><a href="">Infographic learning curve</a></li>
-                    </ul>
+            </nav>
+        </header>
+        <header class="contactHeaderImg"></header>
+
+        <div class="wrapper contactPageWrapper">
+            <h2 class="contactHeaderText">CONTACT <br />US</h2>
+        </div>
+
+        <main id="mainContent" class="blogMain">
+            <!--Contact details section-->
+            <section class="contactDetails">
+                <div class="wrapper">
+                    <div class="textContainer">
+                        <h3>CONTACT DETAILS</h3>
+                        <p class="grayText">
+                            If you need any help, pleazse contact us or send us
+                            an email or go to our forum. We are sure that you
+                            can receive our reply as soon as possible
+                        </p>
+                    </div>
+                    <div class="iconContainers">
+                        <div class="indContainer">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <h4>PHONE</h4>
+                            <p class="grayText">Phone 01: 123 456 7890</p>
+                            <p class="grayText">Phone 02: 472 724 7274</p>
+                        </div>
+                        <div class="indContainer">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <h4>ADDRESS</h4>
+                            <p class="grayText">
+                                6591 Orchard Street, Toronto, Ontario
+                            </p>
+                        </div>
+                        <div class="indContainer">
+                            <i class="fa-solid fa-envelope"></i>
+                            <h4>EMAIL</h4>
+                            <p class="grayText">contact@creative.com</p>
+                            <p class="grayText">info@creative.com</p>
+                        </div>
+                    </div>
                 </div>
-    
-                <div class="twitterWidget">
-                    <h3>SUBSCRIBE NOW</h3>
-                    <p>Signup for emails and notifications below.</p>
-                    <form action="" class="subscribe">
-                        <label for="email" class="sr-only">Enter your email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email">       
-                        <button type="submit" class="submitEmail"><i class="fa-solid fa-arrow-right-long"></i></button>
+            </section>
+
+            <!--Comment form-->
+            <section class="contactCommentForm commentForm">
+                <div class="wrapper">
+                    <h3>GET IN TOUCH WITH US</h3>
+                    <p class="grayText">
+                        If you have any questions, please don't hesitate to send
+                        us a message.
+                    </p>
+                    <form action="">
+                        <label for="name" class="sr-only">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            class="firstRow"
+                            placeholder="Enter your name..."
+                        />
+
+                        <label for="email" class="sr-only">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            class="firstRow"
+                            placeholder="youremail@domain.com"
+                        />
+
+                        <label for="subject" class="sr-only"
+                            >subject(optional)</label
+                        >
+                        <input
+                            type="text"
+                            id="subject"
+                            class="firstRow"
+                            placeholder="Subject (Optional)"
+                        />
+
+                        <label for="comment" class="sr-only"
+                            >Leave your comment</label
+                        >
+                        <textarea
+                            id="comment"
+                            cols="30"
+                            rows="10"
+                            class="commentArea"
+                            placeholder="Here goes your comment"
+                        ></textarea>
+
+                        <button type="submit" class="button submit">
+                            SEND MESSAGE
+                        </button>
                     </form>
                 </div>
-            </div>      
-            <div class="footerLogo">
-                <h3>CREATIVE AGENCY</h3>
+            </section>
+
+            <div class="wrapper contactPageImg">
+                <img
+                    src="./assets/contact-2.jpeg"
+                    alt="woman on phone receiving positive news"
+                />
             </div>
-        </footer>
-    </main>
-</body>
+
+            <!--footer-->
+            <footer>
+                <div class="wrapper">
+                    <div class="footerContact">
+                        <h3>CONTACT US</h3>
+                        <p>6591 Orchard Street, NY 10002, United States</p>
+                        <p>Email: contact@onepro.co</p>
+                        <p>Phone 01: +00 (9) 123 3456 789</p>
+                        <p>Phone 02: +00 (9) 123 3456 788</p>
+                        <p>Fax: +00 (9) 123 3216 449</p>
+                        <div class="socialLinks">
+                            <ul>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-brands fa-facebook-f"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-brands fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><i class="fa-brands fa-instagram"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="recentPosts">
+                        <h3>RECENT POSTS</h3>
+                        <ul>
+                            <li><a href="">Conversion hackathon partner</a></li>
+                            <li>
+                                <a href="">Network channels entrepreneur</a>
+                            </li>
+                            <li><a href="">Return on investment</a></li>
+                            <li>
+                                <a href="">Assets interaction design venture</a>
+                            </li>
+                            <li><a href="">Infographic learning curve</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="twitterWidget">
+                        <h3>SUBSCRIBE NOW</h3>
+                        <p>Signup for emails and notifications below.</p>
+                        <form action="" class="subscribe">
+                            <label for="email" class="sr-only"
+                                >Enter your email</label
+                            >
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                            />
+                            <button type="submit" class="submitEmail">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footerLogo">
+                    <h3>CREATIVE AGENCY</h3>
+                </div>
+            </footer>
+        </main>
+    </body>
 </html>

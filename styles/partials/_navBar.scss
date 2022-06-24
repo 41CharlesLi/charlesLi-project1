@@ -1,26 +1,21 @@
-.skip-link{
+.skip-link {
     position: absolute;
     left: -2000px;
     top: 0px;
     background-color: white;
     color: black;
-    z-index: 10;            
+    z-index: 10;
     overflow: none;
-    &:focus{
+    &:focus {
         left: 0;
-    }                                       
+    }
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+nav {
     position: relative;
-    .logoContainer{
+    .logoContainer {
         order: -1;
         padding: 5px;
-        
     }
     li a {
         color: black;
@@ -30,22 +25,129 @@ nav{
         }
     }
 }
+.menuButton {
+    p {
+        color: black;
+        font-size: 50px;
+    }
+}
 
 .leftNav,
 .rightNav {
     display: none;
 }
+//hamburger menu by:
+//https://codepen.io/andreykrokhin/pen/mGEqja
+//
 
-.burgerMenu{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 5px
+#menuToggle {
+    opacity: 0;
 }
 
-.burgerMenu div{
-    width: 50px; 
-    height: 6px;
-    background-color: black;
-    margin: 3px;
+#menuToggle:checked ~ .menuBtn > span {
+    transform: rotate(45deg);
+}
+#menuToggle:checked ~ .menuBtn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menuToggle:checked ~ .menuBtn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menuToggle:checked ~ .menuBox {
+    visibility: visible;
+    right: 0;
+}
+
+.menuBtn {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+
+    width: 26px;
+    height: 26px;
+
+    cursor: pointer;
+    z-index: 30;
+}
+
+.menuBtn > span,
+.menuBtn > span::before,
+.menuBtn > span::after {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: #616161;
+
+    transition-duration: 0.25s;
+}
+.menuBtn > span::before {
+    content: "";
+    top: -8px;
+}
+.menuBtn > span::after {
+    content: "";
+    top: 8px;
+}
+
+.menuBox {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+
+    width: 300px;
+    height: 100%;
+
+    margin: 0;
+    padding: 80px 0;
+
+    list-style: none;
+
+    background-color: $offWhite;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+
+    transition-duration: 0.4s;
+    z-index: 20;
+
+    .fa-solid {
+        width: 100%;
+    }
+
+    i {
+        position: relative;
+        p {
+            font-size: 0.5rem;
+            position: absolute;
+            top: 18px;
+            left: 31px;
+            background-color: #c3dab7;
+            border-radius: 50%;
+            padding: 8px 6px;
+            line-height: 0;
+        }
+    }
+}
+
+.menuItem {
+    display: block;
+    padding: 12px 24px;
+
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition-duration: 0.25s;
+}
+.menuItem:hover {
+    background-color: $primary;
 }

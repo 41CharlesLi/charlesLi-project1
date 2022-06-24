@@ -1,8 +1,11 @@
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: $headingFont;
 }
 
-h1{
+h1 {
     font-size: 2rem;
     margin: 0;
 }
@@ -15,15 +18,15 @@ h2 {
     font-weight: 500;
 }
 
-h3{ 
+h3 {
     font-size: 1rem;
     line-height: 24px;
     letter-spacing: 1.8px;
 }
 
 h4 {
-    letter-spacing: .2rem;
-    font-size: .8rem;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
 }
 
 p {
@@ -37,26 +40,24 @@ footer {
     }
 }
 
-a{
+a {
     font-family: $headingFont;
     color: black;
     text-decoration: none;
 }
 
 .grayText {
-    font-size: .8rem;
+    font-size: 0.8rem;
     line-height: 1.2rem;
-    letter-spacing: .015rem;
-    opacity: .5;
+    letter-spacing: 0.015rem;
+    opacity: 0.5;
 }
 
-button{
-    
+button {
     font-size: 2rem;
 }
 
-.borderBottom{
+.borderBottom {
     border-bottom: 1px solid rgba(gray, 0.3);
     padding-bottom: 25px;
-    
 }

@@ -1,27 +1,28 @@
 footer {
     background-color: $black;
-    color:$offWhite;
-    h3{
+    color: $offWhite;
+    h3 {
         font-weight: 500;
-        opacity: .9;
+        opacity: 0.9;
         margin: 0;
         margin-top: 30px;
     }
 
-    p, 
+    p,
     a {
-        opacity: .9;
+        opacity: 0.9;
         font-size: 0.8rem;
     }
 
-    a{
+    a {
         text-decoration: none;
-        color:$offWhite;
+        color: $offWhite;
     }
 }
 
-.recentPosts li:before{ 
-    content:"• "; font-size:10pt; 
+.recentPosts li:before {
+    content: "• ";
+    font-size: 10pt;
 }
 
 .footerContact {
@@ -29,11 +30,11 @@ footer {
         margin-top: 0;
         margin-bottom: 20px;
         padding-top: 30px;
-}
-    p{
+    }
+    p {
         margin-bottom: 3px;
     }
-    .socialLinks{
+    .socialLinks {
         display: flex;
         ul {
             li {
@@ -46,23 +47,22 @@ footer {
 }
 
 .recentPosts {
-    h3{
+    h3 {
         margin-bottom: 20px;
     }
-    li{
+    li {
         margin-bottom: 3px;
     }
 }
 
-.twitterWidget{
+.twitterWidget {
     h3 {
         margin-bottom: -5px;
-
     }
     p {
         margin-bottom: 15px;
         border: none;
-}
+    }
     form {
         display: flex;
         flex-direction: row;
@@ -70,28 +70,32 @@ footer {
     input {
         padding: 12px;
         border: none;
-        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
             font-family: $bodyFont;
-            font-size: .8rem;
-            opacity: .5;
+            font-size: 0.8rem;
+            opacity: 0.5;
             font-weight: 400;
         }
-          &::-moz-placeholder { /* Firefox 19+ */
+        &::-moz-placeholder {
+            /* Firefox 19+ */
             font-family: $bodyFont;
-            font-size: .8rem;
-            opacity: .5;
+            font-size: 0.8rem;
+            opacity: 0.5;
             font-weight: 400;
         }
-          &:-ms-input-placeholder { /* IE 10+ */
+        &:-ms-input-placeholder {
+            /* IE 10+ */
             font-family: $bodyFont;
-            font-size: .8rem;
-            opacity: .5;
+            font-size: 0.8rem;
+            opacity: 0.5;
             font-weight: 400;
         }
-          &:-moz-placeholder { /* Firefox 18- */
+        &:-moz-placeholder {
+            /* Firefox 18- */
             font-family: $bodyFont;
-            font-size: .8rem;
-            opacity: .5;
+            font-size: 0.8rem;
+            opacity: 0.5;
             font-weight: 400;
         }
     }
@@ -102,7 +106,7 @@ footer {
     }
 }
 
-.footerLogo{
+.footerLogo {
     background-color: $black;
     margin-top: 25px;
     height: 100px;
@@ -110,8 +114,8 @@ footer {
     display: flex;
     align-items: center;
     border-top: 1px solid rgba($offWhite, 0.2);
-    
-    h3{
+
+    h3 {
         color: $white;
         margin: 0 auto;
     }

@@ -1,22 +1,21 @@
-
 //START OF HOME PAGE
-//start of branding section 
+//start of branding section
 
-.branding{
+.branding {
     background-color: $primary;
     padding-bottom: 50px;
 }
 
-.brandingImg{
-    position:relative;
-    .brandingMainImg{
+.brandingImg {
+    position: relative;
+    .brandingMainImg {
         width: 100vw;
         height: auto;
         max-width: 500px;
     }
-    .circleText{
-        position:absolute;
-        top:-15%;
+    .circleText {
+        position: absolute;
+        top: -15%;
         left: 0px;
         img {
             width: 120px;
@@ -25,7 +24,7 @@
     }
 }
 
-.brandingImgContainer{
+.brandingImgContainer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,9 +40,9 @@
 //end of branding section
 
 //start of circle gallery
-.circleGallery{
+.circleGallery {
     margin: 75px 0 50px 0;
-    .circleGalleryContainer{
+    .circleGalleryContainer {
         display: flex;
         width: 90vw;
         justify-content: space-around;
@@ -53,10 +52,10 @@
             width: 200px;
         }
     }
-        p {
-            text-align: center;
-            opacity: .6;
-            margin-top: 25px;
+    p {
+        text-align: center;
+        opacity: 0.6;
+        margin-top: 25px;
     }
     .textContainer {
         max-width: 800px;
@@ -66,13 +65,13 @@
 //end of circle gallery
 
 //start of product details section
-.productDetails{
+.productDetails {
     background-image: url(/assets/home-4.jpeg);
     background-position: 55% 5%;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    &::after{
+    &::after {
         content: "";
         width: 4px;
         height: 60px;
@@ -80,12 +79,12 @@
         border-left: 1px solid black;
         left: 50%;
         top: 100%;
-        opacity: .3;
+        opacity: 0.3;
     }
-    .productDetailsContainer{
+    .productDetailsContainer {
         padding: 25px 0 25px 0;
     }
-    .indProductContainer{
+    .indProductContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -95,9 +94,8 @@
             text-align: center;
         }
         p {
-            opacity: .5;
+            opacity: 0.5;
             text-align: center;
-
         }
         .iconContainer {
             border: 2px solid black;
@@ -132,24 +130,24 @@
     align-items: center;
 }
 
-.teamGalleryTextContainer{
+.teamGalleryTextContainer {
     background-color: $offWhite;
     text-align: center;
     padding: 35px 50px 5px 50px;
-    h3{
-        opacity: .6;
+    h3 {
+        opacity: 0.6;
         margin-bottom: 25px;
         font-weight: 500;
     }
-    p{
+    p {
         margin-bottom: 50px;
     }
 }
 
-.teamGallery{
-    img, 
+.teamGallery {
+    img,
     a {
-        margin:15px;
+        margin: 15px;
     }
     a {
         height: 270px;
@@ -162,16 +160,16 @@
         align-items: center;
     }
 }
-//end of team gallery  
+//end of team gallery
 
-//start of contact us section 
+//start of contact us section
 
-.contactUs{
+.contactUs {
     background-image: url(/assets/home-10.jpeg);
     background-position: bottom;
     padding: 100px 15px 75px 15px;
     align-items: center;
-    img{
+    img {
         display: none;
     }
 }
@@ -180,15 +178,15 @@
     background-color: $primary;
     text-align: center;
     padding: 25px 25px 75px 25px;
-    width:85%;
-        h2 {
+    width: 85%;
+    h2 {
         margin-bottom: 30px;
         margin-top: 30px;
     }
-        p {
+    p {
         margin-bottom: 50px;
     }
-        .viewPortfolio{
+    .viewPortfolio {
         font-family: $headingFont;
         text-decoration: none;
         background-color: $offWhite;
@@ -199,7 +197,6 @@
 }
 //end of contact us
 
-
 //END MAIN PAGE
 
 //START BLOG PAGE
@@ -209,75 +206,71 @@
     height: 400px;
 }
 
-
 .blogPost {
     padding-bottom: 50px;
     h2 {
-    font-weight: 700;
-    padding-top: 15px;
-}
-    .breadcrumb{
+        font-weight: 700;
+        padding-top: 15px;
+    }
+    .breadcrumb {
         padding-top: 10px;
         padding-bottom: 25px;
         li {
             display: inline;
             opacity: 1.2;
-    }
-    li+li:before {
-        padding: 4px;
-        content: "/\00a0";
-    }
-    li a {
-        text-decoration: none;
-        &:hover {
-            color: #01447e;
-            text-decoration: underline;
+        }
+        li + li:before {
+            padding: 4px;
+            content: "/\00a0";
+        }
+        li a {
+            text-decoration: none;
+            &:hover {
+                color: #01447e;
+                text-decoration: underline;
+            }
+        }
+        li:last-child {
+            font-weight: 700;
+            color: black;
         }
     }
-    li:last-child {
-        font-weight: 700;
-        color: black;
-    }
-}
 
-.authorDetails {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 15px;
-    align-items: flex-start;
-
-    h4, 
-    p {
-        margin: 0;
-    }
-
-
-    .authorDetailsLeft{
+    .authorDetails {
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
         align-items: flex-start;
 
-        img {
-            width: 3rem;
-            height: 3rem;
-            border-radius: 50%;
-            margin-right: 25px;
-            
+        h4,
+        p {
+            margin: 0;
+        }
+
+        .authorDetailsLeft {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+
+            img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                margin-right: 25px;
+            }
+        }
+
+        .authorDetailsRight {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
         }
     }
-
-    .authorDetailsRight {
-        display: flex;
-        flex-direction: row;
-        gap: 25px;
-    }
-}
-
 
     .boldText {
         font-weight: 700;
-        font-size: .8rem
+        font-size: 0.8rem;
     }
 
     .blogSocialLinks {
@@ -285,7 +278,7 @@
         flex-direction: row;
         align-items: flex-end;
         p {
-            margin: 0
+            margin: 0;
         }
         ul {
             display: flex;
@@ -295,7 +288,6 @@
             }
         }
     }
-
 }
 
 //end blog section
@@ -312,9 +304,9 @@
         img {
             width: 100%;
             height: auto;
-        }       
+        }
     }
-    p{
+    p {
         padding: 3px;
     }
 }
@@ -331,19 +323,19 @@
     img {
         padding-bottom: 30px;
     }
-    p{
-        font-size: .8rem;
+    p {
+        font-size: 0.8rem;
     }
     a {
         font-style: italic;
         text-decoration: none;
     }
     .textContainer {
-        position:relative;
+        position: relative;
         background-color: $offWhite;
         padding: 10px;
         margin-bottom: 25px;
-        &::before{
+        &::before {
             content: "";
             width: 0px;
             height: 0px;
@@ -362,38 +354,38 @@
 
 //user comments end
 
-//comment form 
+//comment form
 
 .commentForm {
     h3 {
         font-size: 1.75rem;
     }
     form {
-    display: flex;
-    flex-direction: column;
-    gap:15px;
-    margin-bottom: 50px;
-    
-    input,
-    textarea {
-        border: none;
-        font-family: $bodyFont;
-        padding: 10px;
-        border-bottom: 1px solid rgba(gray, 0.3);
-        &:hover{
-            border: none;        
-            border-bottom: 1px solid black;
-            color: black;
-        }
-        &:focus{
-            outline:none;
-            border: none;        
-            border-bottom: 1px solid black;
-            font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 50px;
+
+        input,
+        textarea {
+            border: none;
+            font-family: $bodyFont;
+            padding: 10px;
+            border-bottom: 1px solid rgba(gray, 0.3);
+            &:hover {
+                border: none;
+                border-bottom: 1px solid black;
+                color: black;
+            }
+            &:focus {
+                outline: none;
+                border: none;
+                border-bottom: 1px solid black;
+                font-weight: bold;
+            }
         }
     }
-    }
-    
+
     button {
         padding: 10px;
         margin: 10px;
@@ -401,10 +393,10 @@
         align-self: center;
         font-family: $headingFont;
         font-size: 1.2rem;
-        opacity:.7;
+        opacity: 0.7;
         line-height: 1;
         font-weight: bold;
-        &:hover{
+        &:hover {
             text-decoration: underline;
             text-underline-offset: 15px;
         }
@@ -428,51 +420,49 @@
     position: relative;
 }
 
-.contactPageWrapper{
+.contactPageWrapper {
     max-width: 1000px;
     position: relative;
     top: -120px;
-h2{
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 3.5rem;
-    
-    &::before {
-        content: "";
-        width: 20px;
-        position: absolute;
-        border-top: 2px solid black;
-        left: 2px;
-        top: -30px;
+    h2 {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 3.5rem;
+
+        &::before {
+            content: "";
+            width: 20px;
+            position: absolute;
+            border-top: 2px solid black;
+            left: 2px;
+            top: -30px;
+        }
     }
-}
 }
 
 .contactDetails {
     padding: 10px;
-        &:first-child {
+    &:first-child {
         text-align: center;
-}
+    }
 
     .textContainer {
-    margin-bottom: 25px;
+        margin-bottom: 25px;
         h3 {
             text-align: center;
         }
     }
-        i{
+    i {
         margin: 10px 0 10px 0;
     }
-        p{
+    p {
         margin: 0;
         margin-bottom: 5px;
-        
     }
-
 }
 
 .contactCommentForm {
-    h3{
+    h3 {
         padding: 10px;
         text-align: center;
         font-size: 1rem;
@@ -482,6 +472,6 @@ h2{
 .contactPageImg {
     width: 100vw;
     img {
-        width: 100%
+        width: 100%;
     }
 }
