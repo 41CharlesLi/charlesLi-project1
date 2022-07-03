@@ -1137,6 +1137,17 @@ nav li a:hover {
   nav .desktop-hidden {
     display: none;
   }
+  nav a::after,
+nav a::before {
+    content: "2";
+    color: transparent;
+  }
+  nav a:hover {
+    text-decoration: line-through;
+  }
+  nav a:hover::before, nav a:hover::after {
+    text-decoration: line-through;
+  }
 
   .burgerMenu {
     display: none;

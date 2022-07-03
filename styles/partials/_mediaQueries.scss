@@ -85,6 +85,19 @@
         .desktop-hidden {
             display: none;
         }
+
+        a::after,
+        a::before {
+            content: "2";
+            color: transparent;
+        }
+        a:hover {
+            text-decoration: line-through;
+            &::before,
+            &::after {
+                text-decoration: line-through;
+            }
+        }
     }
 
     .burgerMenu {
