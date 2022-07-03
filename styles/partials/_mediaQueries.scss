@@ -123,6 +123,9 @@
     }
     .logoContainer {
         margin: 0 auto;
+        h1 a {
+            text-decoration: none;
+        }
     }
 
     .leftNav {

@@ -1176,6 +1176,9 @@ nav a::before {
   .logoContainer {
     margin: 0 auto;
   }
+  .logoContainer h1 a {
+    text-decoration: none;
+  }
 
   .leftNav {
     display: flex;
