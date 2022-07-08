@@ -501,7 +501,8 @@ nav {
   position: relative;
 }
 nav .logoContainer {
-  order: -1;
+  position: absolute;
+  top: 0;
   padding: 5px;
 }
 nav li a {
@@ -512,87 +513,26 @@ nav li a:hover {
   text-decoration: line-through;
 }
 
-.menuButton p {
-  color: black;
-  font-size: 50px;
-}
-
-.leftNav,
-.rightNav {
-  display: none;
-}
-
-#menuToggle {
-  opacity: 0;
-}
-
-#menuToggle:checked ~ .menuBtn > span {
-  transform: rotate(45deg);
-}
-
-#menuToggle:checked ~ .menuBtn > span::before {
-  top: 0;
-  transform: rotate(0);
-}
-
-#menuToggle:checked ~ .menuBtn > span::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-#menuToggle:checked ~ .menuBox {
-  visibility: visible;
-  right: 0;
-  overflow: scroll;
-}
-
-.menuBtn {
-  display: flex;
-  align-items: center;
+.hamburger-menu .fa-bars {
   position: fixed;
-  top: 28px;
-  right: 10px;
-  width: 26px;
-  height: 26px;
-  cursor: pointer;
-  z-index: 30;
-}
-
-.menuBtn > span,
-.menuBtn > span::before,
-.menuBtn > span::after {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background-color: #616161;
-  transition-duration: 0.25s;
-}
-
-.menuBtn > span::before {
-  content: "";
-  top: -8px;
-}
-
-.menuBtn > span::after {
-  content: "";
-  top: 8px;
+  z-index: 50;
+  right: 0;
+  padding: 5px;
+  font-size: 2rem;
 }
 
 .menuBox {
   display: block;
   position: fixed;
-  visibility: hidden;
   top: 0;
-  right: -100%;
-  width: 300px;
+  right: 0;
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 80px 0;
   list-style: none;
   background-color: #f6f6f6;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
-  transition-duration: 0.4s;
   z-index: 20;
 }
 .menuBox .fa-solid {
@@ -605,7 +545,7 @@ nav li a:hover {
   font-size: 0.5rem;
   position: absolute;
   top: 18px;
-  left: 31px;
+  left: 23px;
   background-color: #c3dab7;
   border-radius: 50%;
   padding: 8px 6px;
@@ -614,7 +554,7 @@ nav li a:hover {
 
 .menuItem {
   display: block;
-  padding: 12px 24px;
+  padding: 12px 15px;
   color: #333;
   font-size: 20px;
   font-weight: 600;
@@ -1061,6 +1001,10 @@ nav li a:hover {
 }
 
 @media (min-width: 750px) {
+  .menuBox {
+    width: 33%;
+  }
+
   header {
     background-size: cover;
   }
@@ -1129,6 +1073,62 @@ nav li a:hover {
     height: 900px;
   }
 
+  #logoContainer {
+    position: static;
+    text-align: center;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .desktopNav {
+    display: flex;
+    justify-content: center;
+  }
+
+  #desktopNav {
+    position: static;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    max-width: 1600px;
+    box-shadow: none;
+    background-color: transparent;
+    justify-content: space-between;
+  }
+  #desktopNav li:nth-child(1) {
+    order: 4;
+  }
+  #desktopNav li:nth-child(2) {
+    order: 1;
+  }
+  #desktopNav li:nth-child(3) {
+    order: 2;
+  }
+  #desktopNav li:nth-child(4) {
+    order: 3;
+  }
+  #desktopNav li:nth-child(5) {
+    order: 5;
+  }
+  #desktopNav li:nth-child(6) {
+    order: 6;
+  }
+  #desktopNav li:nth-child(7) {
+    order: 7;
+  }
+  #desktopNav li:nth-child(8) {
+    order: 8;
+  }
+  #desktopNav li {
+    margin: 0px 0.5% 0px 1%;
+  }
+  #desktopNav li .menuItem:hover {
+    background-color: transparent;
+  }
+
   nav {
     max-width: 1400px;
     margin: 0 auto;
@@ -1153,22 +1153,6 @@ nav a::before {
     display: none;
   }
 
-  .desktopNav,
-.leftNav,
-.rightNav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px 0 20px;
-    padding: 0 50px;
-  }
-  .desktopNav li,
-.leftNav li,
-.rightNav li {
-    margin: 0px 5px 0px 10px;
-  }
-
   .flexOrder {
     order: -1;
   }
@@ -1178,36 +1162,6 @@ nav a::before {
   }
   .logoContainer h1 a {
     text-decoration: none;
-  }
-
-  .leftNav {
-    display: flex;
-  }
-  .leftNav li {
-    list-style: none;
-    padding-top: 5px;
-  }
-
-  .rightNav .fa-solid {
-    font-size: 1.3rem;
-  }
-  .rightNav li {
-    display: inline;
-  }
-  .rightNav .fa-bag-shopping {
-    position: relative;
-    text-align: center;
-  }
-  .rightNav p {
-    font-size: 0.5rem;
-    position: absolute;
-    top: 6px;
-    left: 7px;
-    padding: 3px;
-    background-color: #c3dab7;
-    border-radius: 50%;
-    padding: 8px 6px;
-    line-height: 0;
   }
 
   .brandingImg .circleText img {

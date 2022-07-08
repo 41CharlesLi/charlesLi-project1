@@ -16,6 +16,8 @@
             src="https://kit.fontawesome.com/13dd608ac9.js"
             crossorigin="anonymous"
         ></script>
+        <script src="script.js"></script>
+
     </head>
     <body>
         <!--skip link-->
@@ -24,79 +26,37 @@
         <!--Header-->
         <header class="contactHeader">
             <nav>
-                <!--hamburger button and mobile nav-->
-                <div class="hamburger-menu desktop-hidden">
-                    <input id="menuToggle" type="checkbox" />
-                    <label class="menuBtn" for="menuToggle">
-                        <span></span>
-                    </label>
-
-                    <ul class="menuBox">
+                <a
+                    href="javascript:void(0);"
+                    class="hamburger-menu desktop-hidden"
+                    onclick="myFunction()"
+                >
+                    <i class="fa fa-bars"></i>
+                </a>
+                
+                <!--navbar for desktop-->
+                <div class="desktopNav">
+                 
+                    <ul class="menuBox" id="desktopNav">
                         <li>
-                            <a class="menuItem" href="./index.html">HOME</a>
+                            <div class="logoContainer" id="logoContainer">
+                                <h1><a href="./index.html">CREATIVE</a></h1>
+                            </div>
                         </li>
+                        <li><a class="menuItem" href="./index.html">HOME</a></li>
                         <li><a class="menuItem" href="./blog.html">BLOG</a></li>
                         <li><a class="menuItem" href="#">PORTFOLIO</a></li>
                         <li><a class="menuItem" href="#">SHOP</a></li>
+                        <li><a class="menuItem" href="./contact.html">CONTACT</a></li>
+                        <li><i class="menuItem fa-solid fa-magnifying-glass" aria-hidden="true">
+                            <span class="sr-only">search</span></i></li>
                         <li>
-                            <a class="menuItem" href="./contact.html"
-                                >CONTACT</a
-                            >
-                        </li>
-                        <li>
-                            <i
-                                class="menuItem fa-solid fa-magnifying-glass"
-                                aria-hidden="true"
-                            >
-                                <span class="sr-only">search</span></i
-                            >
-                        </li>
-                        <li>
-                            <i
-                                class="menuItem fa-solid fa-bag-shopping"
-                                aria-hidden="true"
-                            >
-                                <span class="sr-only">shopping bag</span>
-                                <p class="bagCounter">2</p>
-                            </i>
+                        <i class="menuItem fa-solid fa-bag-shopping" aria-hidden="true">
+                            <span class="sr-only">shopping bag</span>
+                            <p class="bagCounter">2</p>
+                        </i>
                         </li>
                     </ul>
-                </div>
-
-                <!--desktop nav-->
-                <div class="desktopNav">
-                    <div class="flexOrder">
-                        <ul class="leftNav">
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="./blog.html">BLOG</a></li>
-                            <li><a href="#">PORTFOLIO</a></li>
-                        </ul>
-                    </div>
-                    <div class="logoContainer">
-                        <h1><a href="./index.html">CREATIVE</a></h1>
-                    </div>
-                    <div class="rightNav">
-                        <ul>
-                            <li><a href="#">SHOP</a></li>
-                            <li><a href="./contact.html">CONTACT</a></li>
-                            <li>
-                                <i
-                                    class="fa-solid fa-magnifying-glass"
-                                    aria-hidden="true"
-                                >
-                                    <span class="sr-only">search</span></i
-                                >
-                            </li>
-                            <li>
-                                <i
-                                    class="fa-solid fa-bag-shopping"
-                                    aria-hidden="true"
-                                >
-                                    <span class="sr-only">shopping bag</span>
-                                    <p class="bagCounter">2</p>
-                                </i>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </nav>
