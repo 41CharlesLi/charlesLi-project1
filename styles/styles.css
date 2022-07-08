@@ -497,6 +497,16 @@ footer a {
   left: 0;
 }
 
+.mobile-hidden {
+  display: none;
+}
+
+#logoContainer {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
 nav {
   position: relative;
 }
@@ -505,11 +515,17 @@ nav .logoContainer {
   top: 0;
   padding: 5px;
 }
-nav li a {
-  color: black;
-  font-weight: 500;
+nav .logoContainer a:hover {
+  text-decoration: none;
 }
-nav li a:hover {
+nav li .mobile-hidden {
+  display: none;
+}
+nav a {
+  color: black;
+  font-weight: 700;
+}
+nav a:hover {
   text-decoration: line-through;
 }
 
@@ -526,7 +542,7 @@ nav li a:hover {
   position: fixed;
   top: 0;
   right: 0;
-  width: 100%;
+  width: 60%;
   height: 100%;
   margin: 0;
   padding: 80px 0;
@@ -1089,17 +1105,15 @@ nav li a:hover {
   #desktopNav {
     position: static;
     display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 0 20px;
     width: 100%;
     max-width: 1600px;
     box-shadow: none;
     background-color: transparent;
-    justify-content: space-between;
   }
   #desktopNav li:nth-child(1) {
     order: 4;
+    margin: 0 auto;
   }
   #desktopNav li:nth-child(2) {
     order: 1;
@@ -1136,6 +1150,9 @@ nav li a:hover {
   }
   nav .desktop-hidden {
     display: none;
+  }
+  nav li .mobile-hidden {
+    display: flex;
   }
   nav a::after,
 nav a::before {
@@ -1329,7 +1346,7 @@ nav a::before {
   }
 
   .blogPost h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     margin-bottom: 25px;
   }
   .blogPost .authorDetails {

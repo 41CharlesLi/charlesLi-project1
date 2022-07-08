@@ -1,10 +1,8 @@
 function myFunction() {
-    const menuBox = document.querySelector(".menuBox");
-    console.log(menuBox);
+    const menuBox = document.querySelector("ul");
+    const listItems = document.querySelectorAll(".menuItem");
 
-    if (menuBox.style.display === "none") {
-        menuBox.style.display = "block";
-    } else {
-        menuBox.style.display = "none";
-    }
+    menuBox.classList.toggle("menuBox");
+    listItems.classList.toggle("mobile-hidden");
+    console.log(menuBox.classList);
 }

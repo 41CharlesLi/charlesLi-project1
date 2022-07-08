@@ -10,6 +10,14 @@
         left: 0;
     }
 }
+.mobile-hidden {
+    display: none;
+}
+#logoContainer {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
 
 nav {
     position: relative;
@@ -17,10 +25,16 @@ nav {
         position: absolute;
         top: 0;
         padding: 5px;
+        a:hover {
+            text-decoration: none;
+        }
     }
-    li a {
+    li .mobile-hidden {
+        display: none;
+    }
+    a {
         color: black;
-        font-weight: 500;
+        font-weight: 700;
         &:hover {
             text-decoration: line-through;
         }
@@ -42,7 +56,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 60%;
     height: 100%;
     margin: 0;
     padding: 80px 0;

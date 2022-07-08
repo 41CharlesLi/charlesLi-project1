@@ -87,6 +87,7 @@
         text-align: center;
         width: min-content;
     }
+
     .desktopNav {
         display: flex;
         justify-content: center;
@@ -95,16 +96,15 @@
     #desktopNav {
         position: static;
         display: flex;
-        flex-direction: row;
-        align-items: center;
         padding: 0 20px;
         width: 100%;
         max-width: 1600px;
         box-shadow: none;
         background-color: transparent;
-        justify-content: space-between;
+
         li:nth-child(1) {
             order: 4;
+            margin: 0 auto;
         }
         li:nth-child(2) {
             order: 1;
@@ -143,7 +143,9 @@
         .desktop-hidden {
             display: none;
         }
-
+        li .mobile-hidden {
+            display: flex;
+        }
         a::after,
         a::before {
             content: "2";
@@ -370,7 +372,7 @@
 
     .blogPost {
         h2 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             margin-bottom: 25px;
         }
         .authorDetails {
