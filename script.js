@@ -1,4 +1,4 @@
-function myFunction() {
+function showMenu() {
     const menuBox = document.querySelector("ul");
     const listItems = document.querySelectorAll(".menuItem");
 
