@@ -16,7 +16,6 @@
             src="https://kit.fontawesome.com/13dd608ac9.js"
             crossorigin="anonymous"
         ></script>
-        <script src="script.js"></script>
     </head>
 
     <body>
@@ -106,7 +105,7 @@
             <section class="circleGallery">
                 <div class="wrapper">
                     <div class="circleGalleryContainer">
-                        <button class="leftScroll">
+                        <button id="leftScroll">
                             <i
                                 class="fa-solid fa-angle-left"
                                 aria-hidden="true"
@@ -116,11 +115,27 @@
                                 >
                             </i>
                         </button>
-                        <img
-                            src="./assets/home-3.jpeg"
-                            alt="a magazine article about the plight of the shirtless man"
-                        />
-                        <button class="rightScroll">
+                        <ul id="imgList">
+                            <li><img
+                                src="./assets/home-3.jpg"
+                                alt="a magazine article about the plight of the shirtless man"
+                                class="circleGalleryImg"
+                            /></li>
+                            <li><img 
+                                src="./assets/home-11.jpg"
+                                alt="cereal magazine on top of a bed"
+                                /></li>
+                            <li><img 
+                                src="./assets/home-12.jpg"
+                                alt="semi-detached townhome with different color schemes"
+                                /></li>
+                            <li><img 
+                                src="./assets/home-13.jpg"
+                                alt="a sparsely decorated grey room with a clothing rack"
+                                /></li>
+                           
+                          </ul>
+                        <button id="rightScroll">
                             <i
                                 class="fa-solid fa-angle-right"
                                 aria-hidden="true"
@@ -378,4 +393,6 @@
             </div>
         </footer>
     </body>
+    <script src="script.js"></script>
+
 </html>

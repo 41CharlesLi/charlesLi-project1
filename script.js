@@ -1,8 +1,28 @@
 function showMenu() {
     const menuBox = document.querySelector("ul");
-    const listItems = document.querySelectorAll(".menuItem");
 
     menuBox.classList.toggle("menuBox");
-    listItems.classList.toggle("mobile-hidden");
     console.log(menuBox.classList);
 }
+
+var imgList = document.getElementById("imgList");
+var scrollRight = document.getElementById("leftScroll");
+var scrollLeft = document.getElementById("rightScroll");
+
+// When a user clicks on the right arrow, the ul will scroll 750px to the right
+scrollRight.addEventListener("click", (event) => {
+    if (window.innerWidth < 700) {
+        imgList.scrollBy(-165, 0);
+    } else {
+        imgList.scrollBy(-600, 0);
+    }
+});
+
+// When a user clicks on the left arrow, the ul will scroll 750px to the left
+scrollLeft.addEventListener("click", (event) => {
+    if (window.innerWidth < 700) {
+        imgList.scrollBy(165, 0);
+    } else {
+        imgList.scrollBy(600, 0);
+    }
+});
