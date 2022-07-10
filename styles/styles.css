@@ -637,7 +637,8 @@ i p {
 }
 
 #imgList {
-  width: 65%;
+  font-size: 0;
+  width: 75%;
   scroll-behavior: smooth;
   display: inline-block;
   position: relative;
@@ -658,8 +659,7 @@ i p {
   display: inline-block;
   position: relative;
   vertical-align: middle;
-  margin-left: -0.225%;
-  margin-right: 0%;
+  margin-right: -0.5px;
   filter: grayscale(100%);
   transition: 0.2s;
 }
@@ -1066,6 +1066,11 @@ i p {
   .brandingImg .circleText img {
     width: 175px;
     height: auto;
+  }
+
+  #imgList {
+    width: 50%;
+    max-width: 475px;
   }
 
   .productDetails {

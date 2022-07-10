@@ -1,3 +1,4 @@
+//hamburger menu
 function showMenu() {
     const menuBox = document.querySelector("ul");
     const linksArray = menuBox.children;
@@ -12,19 +13,17 @@ function showMenu() {
     shoppingCounter.classList.toggle("mobile-hidden");
 }
 
+//carousel
+
 const imgList = document.getElementById("imgList");
 const scrollRight = document.getElementById("rightScroll");
 const scrollLeft = document.getElementById("leftScroll");
 const indImg = document.querySelector(".circleGalleryImg");
-// console.log(indImg.offsetParent.nextElementSibling);
-// console.log(imgList);
-// console.log(indImg);
-// When a user clicks on the right arrow, the ul will scroll 750px to the right
+
 scrollRight.addEventListener("click", (event) => {
     imgList.scrollBy(indImg.width, 0);
 });
 
-// When a user clicks on the left arrow, the ul will scroll 750px to the left
 scrollLeft.addEventListener("click", (event) => {
     imgList.scrollBy(-indImg.width, 0);
 });
